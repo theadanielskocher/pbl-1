@@ -1,0 +1,57 @@
+\begin{figure}[!h]
+	\centering
+    \begin{tikzpicture}[
+    node distance=2.5cm,
+    transform shape,
+    % Tự định nghĩa lại các khối đồ họa cơ bản nhất
+    entity/.style={
+        rectangle, draw=blue!80, fill=blue!10, 
+        very thick, minimum width=3.5cm, minimum height=1.2cm, 
+        font=\bfseries, drop shadow
+    },
+    attribute/.style={
+        ellipse, draw=orange!80, fill=yellow!10, 
+        thick, minimum width=2.5cm, minimum height=0.8cm, 
+        font=\small, drop shadow
+    },
+    relationship/.style={
+        diamond, draw=gray!80, fill=gray!10, 
+        thick, aspect=1.5, text width=2.5cm, align=center,
+        font=\small\bfseries, drop shadow
+    },
+    >={Stealth[round]},
+    scale=0.8
+]
+
+    % 1. THỰC THỂ TRUNG TÂM
+    \node[entity] (person) {PERSON (NODE)};
+
+    % 2. CÁC THUỘC TÍNH (Gộp bớt để sơ đồ thoáng)
+    \node[attribute] (name) [above=1.5cm of person] {\underline{Name}} edge[thick] (person);
+    \node[attribute] (info) [above right=1cm and 1cm of person] {Profile Info} edge[thick] (person);
+    \node[attribute] (id) [above left=1cm and 1cm of person] {ID (Tạm)} edge[thick] (person);
+
+    % 3. QUAN HỆ FIRST CHILD (Màu đỏ, vòng về bên trái)
+    \node[relationship, draw=red!70, fill=red!5] (rc) [below left=2cm and 0.5cm of person] {has\\FirstChild};
+    \draw[-, thick] (person.210) -- (rc.north);
+    \draw[->, red!70, thick] (rc.west) -- ++(-1.5,0) |- (person.190) 
+        node[pos=0.75, above, font=\bfseries, text=red!70!black] {pFirstChild (1:1)};
+
+    % 4. QUAN HỆ NEXT SIBLING (Màu cam, vòng về bên phải)
+    \node[relationship, draw=orange!70, fill=orange!5] (rs) [below right=2cm and 0.5cm of person] {has\\NextSibling};
+    \draw[-, thick] (person.330) -- (rs.north);
+    \draw[->, orange!70, thick] (rs.east) -- ++(1.5,0) |- (person.350) 
+        node[pos=0.75, above, font=\bfseries, text=orange!70!black] {pNextSibling (1:1)};
+
+    % 5. QUAN HỆ PARENT (Màu xanh, vòng cung rộng ôm trọn bên trái)
+    \node[relationship, draw=green!60!black, fill=green!5] (rp) [below=3.5cm of person] {has\\Parent};
+    \draw[-, thick] (person.270) -- (rp.north);
+    % Vẽ đường Parent vòng xa ra ngoài để không đè lên FirstChild
+    \draw[->, green!60!black, thick] (rp.south) -- ++(0,-0.8) -| ([xshift=-4.5cm]person.west) |- (person.165) 
+        node[pos=0.75, above, font=\bfseries, text=green!60!black] {pParent (N:1)};
+
+\end{tikzpicture}
+\caption{Sơ đồ ERD mô tả thực thể Person và các mối quan hệ tự thân trong cấu trúc cây LCRS}
+\label{fig:ERD1}
+\end{figure}
+

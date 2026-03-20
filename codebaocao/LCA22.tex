@@ -1,0 +1,44 @@
+\begin{figure}[htbp]
+	\vspace*{-\baselineskip}
+	\centering
+	\begin{algorithm}[H]
+		\footnotesize
+		\caption{Thuật toán thu thập ứng viên cùng thế hệ}
+		\begin{algorithmic}[1]
+			% Hàm thu thập tất cả các node cách gốc một khoảng dB
+			\Function{CollectCandidates}{root, dB}
+			\State Cands $\gets \emptyset$ \Comment{Khởi tạo tập ứng viên rỗng}
+			
+			\If{$dB = 0$}
+			\State \Return \{root\} \Comment{Nếu khoảng cách = 0, trả về chính gốc}
+			\EndIf
+			
+			% Thủ tục đệ quy để duyệt cây
+			\Procedure{DuyetTang}{curr, depth}
+			\If{curr = NULL} 
+			\State \Return \Comment{Trường hợp cơ sở: không có node để xử lý}
+			\EndIf
+			
+			\If{depth = dB}
+			\State Cands $\gets$ Cands $\cup$ \{curr\} \Comment{Thêm node hiện tại vào tập ứng viên}
+			\State \Return \Comment{Dừng duyệt sâu hơn}
+			\EndIf
+			
+			\State \Call{DuyetTang}{curr.firstChild, depth + 1} \Comment{Duyệt node con đầu tiên (xuống sâu hơn)}
+			
+			\State t $\gets$ curr.firstChild \Comment{Bắt đầu duyệt các node anh em}
+			\While{t $\neq$ NULL \textbf{and} t.nextSibling $\neq$ NULL}
+			\State t $\gets$ t.nextSibling \Comment{Chuyển sang node anh em kế tiếp}
+			\State \Call{DuyetTang}{$t$, $depth + 1$} \Comment{Duyệt cây con của node anh em này}
+			\EndWhile
+			\EndProcedure
+			
+			\State \Call{DuyetTang}{root, 0} \Comment{Bắt đầu duyệt từ gốc ở độ sâu 0}
+			\State \Return $Cands$ \Comment{Trả về tất cả các ứng viên đã thu thập được}
+			\EndFunction
+		\end{algorithmic}
+	\end{algorithm}
+	\vspace*{-\baselineskip}
+	\caption{Mã giả mô tả pha thứ hai của thuật toán truy vấn theo danh xưng}
+	\label{fig:Rel1}
+\end{figure}

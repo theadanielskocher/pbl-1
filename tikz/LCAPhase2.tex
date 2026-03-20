@@ -1,0 +1,43 @@
+\begin{figure}[H]
+	\vspace*{-\baselineskip}
+    \centering
+    \begin{minipage}{0.50\textwidth}
+        \begin{algorithm}[H]
+        	\footnotesize
+            \caption{DetermineRelationship (A, B)} \label{alg:DetermineRelationship}
+            \begin{algorithmic}
+                \State Đặt PathA = GetPathToRoot(A)
+                \State Đặt PathB = GetPathToRoot(B)
+                \For{$i$ from $0$ to $\min(h_A,h_B)$} 
+                    \If {$PathA_i$ trùng $PathB_i$}
+                        \State Đặt $\text{LCAIndex}=i$
+                    \Else \ \textbf{break}
+                    \EndIf
+                \EndFor
+                \If{$\text{LCAIndex}=-1$} \State \Return Không cùng huyết thống
+                    \Else \ \Return LCAIndex
+                \EndIf
+            \end{algorithmic}
+        \end{algorithm}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}{0.50\textwidth}
+        \centering
+        \begin{tikzpicture}[level distance=1.5cm, sibling distance=2.5cm]
+        	% Chỉ tô đậm LCA
+        	\node (root) [person, LCA] {Cụ Tổ (LCA)}
+        	child { node (c1) [person] {Cha A} 
+        		child { node (a) [person, pathA] {Người A} }
+        		child { node (s1) [person] {Em của A} }
+        	}
+        	child { node (b) [person, pathB] {Người B} };
+        	
+        	\draw[line] (a) -- (c1);
+        	\draw[line] (c1) -- (root);
+        	\draw[line] (b) -- (root);
+        \end{tikzpicture}
+    \end{minipage}
+    \caption{Mã giả và hình vẽ minh hoạ cho pha 2 của thuật toán}
+    \label{fig:LCAPhase2}
+    \vspace*{-\baselineskip}
+\end{figure}

@@ -1,0 +1,22 @@
+\begin{figure}[h]
+\begin{lstlisting}[style=cppstyle]
+// Depth-First Traversal
+void DisplayTree(Person* current, int level) {
+	if (current == nullptr) return;
+	// Child
+	DisplayTree(current->firstChild, level + 1);
+	// Sibling
+	DisplayTree(current->nextSibling, level);
+}
+
+// Free up memory
+void FreeTree(Person* current) {
+	if (current == nullptr) return;
+	FreeTree(current->firstChild);
+	FreeTree(current->nextSibling);
+	delete current;
+}
+\end{lstlisting}
+\caption{Đoạn mã C++ thể hiện logic duyệt cây theo chiều sâu và giải phóng bộ nhớ.}
+\label{fig:DfsAndFree}
+\end{figure}

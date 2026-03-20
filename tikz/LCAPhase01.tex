@@ -1,0 +1,38 @@
+\begin{figure}[H]
+	\vspace*{-\baselineskip}
+    \centering
+    \begin{minipage}{0.50\textwidth}
+        \begin{algorithm}[H]
+        	\footnotesize 
+            \caption{GetPathToRoot(Node)} \label{alg:getpathtoroot}
+            \begin{algorithmic}
+                \State Khởi tạo mảng Path rỗng
+                \While{Node không phải là rỗng}
+                    \State Thêm Node vào đầu mảng Path (để Gốc luôn ở vị trí số 0)
+                    \State Node = Node.parent
+                \EndWhile
+                \State \Return Path
+            \end{algorithmic}
+        \end{algorithm}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}{0.50\textwidth}
+        \centering
+        \begin{tikzpicture}[level distance=1.5cm, sibling distance=2.5cm]
+        	% Tô màu toàn bộ đường đi từ A lên Root và B lên Root
+        	\node (root) [person, pathA, pathB] {Cụ Tổ}
+        	child { node (c1) [person, pathA] {Cha A} 
+        		child { node (a) [person, pathA] {Người A} }
+        		child { node (s1) [person] {Em của A} }
+        	}
+        	child { node (b) [person, pathB] {Người B} };
+        	
+        	\draw[line, red, ultra thick] (a) -- (c1);
+        	\draw[line, red, ultra thick] (c1) -- (root);
+        	\draw[line, green!60!black, ultra thick] (b) -- (root);
+        	
+        \end{tikzpicture}
+    \end{minipage}      
+    \caption{Mã giả và hình vẽ minh hoạ cho pha 1 của thuật toán.}
+    \label{fig:LCAPhase1}
+\end{figure}

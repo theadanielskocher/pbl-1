@@ -1,0 +1,33 @@
+% \begin{tikzpicture}[
+	% 	scale=0.7,
+	% 	transform shape,
+	% 	node distance=2cm, 
+	% 	every entity/.style={fill=blue!20, draw=blue!60, very thick, drop shadow},
+	% 	every attribute/.style={fill=yellow!20, draw=orange!60, node distance=1.5cm, drop shadow},
+	% 	every relationship/.style={fill=green!20, draw=green!60, very thick, drop shadow},
+	% 	line width=1pt,
+	% 	>={Stealth[round]}
+	% 	]
+		
+	% 	% Thực thể chính
+	% 	\node[entity] (person) {PERSON};
+		
+	% 	% Các thuộc tính
+	% 	\node[attribute] (name) [above=of person] {\underline{Name}} edge (person);
+	% 	\node[attribute] (gender) [above left=of person] {Gender} edge (person);
+	% 	\node[attribute] (birth) [above right=of person] {Birthday} edge (person);
+	% 	\node[attribute] (job) [left=of person] {Job} edge (person);
+	% 	\node[attribute] (death) [right=of person] {DeathDay} edge (person);
+	% 	\node[attribute] (spouse) [below left=of person] {SpouseName} edge (person);
+	% 	\node[attribute] (childnum) [below right=of person] {NumChildren} edge (person);
+		
+	% 	% Mối quan hệ tự thân (Recursive Relationship)
+	% 	\node[relationship] (rel) [below=2.5cm of person] {Relationship} edge (person);
+		
+	% 	% Đường nối quan hệ
+	% 	\draw[->, thick, blue!70] (rel.west) --  (person.south) 
+	% 	node[pos=0.5, below left, font=\scriptsize] {parent/sibling};
+	% 	\draw[->, thick, red!70] (rel.east) -- (person.south) 
+	% 	node[pos=0.5, below right, font=\scriptsize] {firstChild};
+	% \end{tikzpicture}
+	% \caption{{\small Sơ đồ ERD mô tả thực thể Person và các mối quan hệ tự thân trong cấu trúc cây LCRS}}

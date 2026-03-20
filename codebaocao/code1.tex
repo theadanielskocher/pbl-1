@@ -1,0 +1,24 @@
+\begin{figure}[htbp]
+	\vspace*{-\baselineskip}
+	\centering
+	\begin{algorithm}[H]
+		\footnotesize
+		\caption{Thêm con vào danh sách anh chị em}
+		\begin{algorithmic}[1]
+			\State child $\gets$ \Call{TaoDoiTuong}{Person, name, gender, parent}
+			\If{parent.firstChild = null} \Comment{Nếu parent chưa có con đầu}
+			\State parent.firstChild $\gets$ child \Comment{Gán child làm con đầu tiên của parent}
+			\Else
+			\State current $\gets$ parent.firstChild
+			\While{current.nextSibling $\neq$ null}
+			\State current $\gets$ current.nextSibling
+			\EndWhile
+			\State current.nextSibling $\gets$ child \Comment{Nối child vào cuối danh sách con của parent}
+			\EndIf
+		\end{algorithmic}
+	\end{algorithm}
+	\vspace*{-\baselineskip}
+	\caption{Mã giả mô tả thuật toán thêm một người con vào cây gia đình}
+	\label{fig:themCon}
+	\vspace*{-\baselineskip}
+\end{figure}

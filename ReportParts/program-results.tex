@@ -1,0 +1,36 @@
+\subsection{Tổ chức chương trình}
+\subsubsection{Kiến trúc tổng thể của chương trình}
+Hệ thống được thiết kế và xây dựng dựa trên mô hình Lập trình theo mô-đun (module). Thay vì tập trung toàn bộ mã nguồn vào một tệp duy nhất, chương trình được phân rã thành các mô-đun độc lập dựa trên \textit{nguyên lý Phân tách trách nhiệm}.
+
+Cách tiếp cận này đảm bảo hệ thống đạt được độ gắn kết cao bên trong từng mô-đun và độ phụ thuộc thấp giữa các mô-đun với nhau, tạo tiền đề thuận lợi cho việc kiểm thử, gỡ lỗi và mở rộng tính năng trong tương lai.
+\subsubsection{Cấu trúc tệp tin và phân rã chức năng}
+
+Mã nguồn của đồ án được tổ chức thành 6 thành phần cốt lõi, bao gồm 1 tệp tiêu đề cơ sở, 4 cặp module logic (\texttt{.h} và \texttt{.cpp}) và một tệp điều khiển trung tâm. Chi tiết chức năng của từng tệp được quy định như sau:
+\begin{enumerate}[label*=(\alph*)]
+	\item \texttt{DataStructures.h}: Định nghĩa cấu trúc nút LCRS, bản ghi và biến toàn cục, đảm bảo nhất quán kiểu dữ liệu giữa các mô-đun.
+	\item \texttt{TreeManager.h/.cpp}: Thao tác trực tiếp trên RAM; khởi tạo biến toàn cục; quản lý vòng đời nút (cấp phát, giải phóng, truy xuất).
+	\item \texttt{SearchEngine.h/.cpp}: Xử lý truy vấn, kiểm soát trùng lặp; duyệt DFS để tìm kiếm; cung cấp giao diện chọn thực thể.
+	\item \texttt{Relationship.h/.cpp}: Giải quyết bài toán đồ thị gia phả; tìm tổ tiên chung (LCA); đổi tọa độ thế hệ sang danh xưng và ngược lại.
+	\item \texttt{FileHandler.h/.cpp}: Quản lý I/O với ổ cứng; tuần tự hóa cây LCRS thành mảng, ghi/đọc file nhị phân; hỗ trợ nhập từ file văn bản, xử lý lỗi dòng.
+	\item \texttt{main.cpp}: Khởi chạy, tạo dữ liệu mẫu, điều hướng sự kiện và xử lý lỗi nhập.
+\end{enumerate}
+
+\input{tikz/ProArch}
+Toàn bộ mã nguồn của chương trình quản lý gia phả có tại Phụ lục đính kèm theo báo cáo này.
+
+\subsection{Ngôn ngữ cài đặt}
+
+\subsubsection{Lý do sử dụng ngôn ngữ C++}
+Dự án lựa chọn ngôn ngữ C++ làm ngôn ngữ lập trình chính để triển khai hệ thống bởi những lý do như sau:
+\begin{itemize}
+	\item Mô hình LCRS yêu cầu cấp phát bộ nhớ liên tục, C++ dùng new/delete để kiểm soát vòng đời của từng nút (Person) một cách chính xác, nhờ đó tối ưu hiệu suất.
+	\item Dùng \texttt{std::string} thay vì mảng char giúp xử lý tên tiếng Việt an toàn, tránh tràn bộ đệm. \texttt{std::vector} cũng được dùng để lưu kết quả tìm kiếm, giúp mã nguồn ngắn gọn, rõ ràng.
+	\item Nhờ struct/class, C++ mô hình hóa “Con người” tự nhiên với đầy đủ thuộc tính và quan hệ, đồng thời dễ dàng tách chương trình thành các tệp \texttt{.h} và \texttt{.cpp}.
+\end{itemize}
+
+\subsubsection{Môi trường phát triển và công cụ hỗ trợ}
+\begin{itemize}
+	\item Trình biên dịch: Sử dụng GCC (\texttt{g++}) tiêu chuẩn C++11 trở lên để hỗ trợ các tính năng hiện đại và đảm bảo tốc độ thực thi tối ưu.
+	\item Hệ thống được phát triển trên các IDE phổ biến như \textit{Embarcadero Dev-C++} và \textit{Visual Studio}, tận dụng khả năng quản lý \textit{project} để liên kết các tệp tin mô-đun.
+	\item Định dạng tệp lưu trữ: tệp nhị phân (.dat) dùng để lưu trữ trạng thái cây dưới dạng các struct tĩnh, đảm bảo tốc độ đọc/ghi nhanh và bảo mật dữ liệu cơ bản; tệp văn bản (\texttt{.txt}) Dùng để nhập liệu hàng loạt theo định dạng phân tách bằng dấu phẩy (CSV), giúp người dùng dễ dàng soạn thảo dữ liệu từ bên ngoài.
+\end{itemize}

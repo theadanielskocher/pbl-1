@@ -1,0 +1,54 @@
+\begin{figure}
+	\vspace*{-\baselineskip}
+	\centering
+	\begin{adjustbox}{center=-3cm}
+	\begin{tikzpicture}[
+		>=stealth, thick,
+		box/.style={draw=black, fill=white, rounded corners, inner sep=10pt, align=left},
+		highlight/.style={draw=blue!80, fill=blue!10, thick},
+		arrowtext/.style={midway, above, font=\scriptsize\itshape, text=blue!80!black},
+		transform shape,
+		scale=0.65
+		]
+		
+		\node[box, highlight] (file) {
+			\textbf{Bản ghi đang đọc (File .dat)}\\
+			\texttt{id:} 2 \\
+			\texttt{parentId:} \textcolor{red}{\textbf{1}} \\
+			\texttt{name:} Nguyễn Văn Hùng
+		};
+		
+		% Khối 2: Bảng Băm (Hash Table)
+		\node[box, right=3.5cm of file] (hash) {
+			\textbf{Bảng Băm (\texttt{unordered\_map})}\\
+			Khóa (ID) $\rightarrow$ Giá trị (Địa chỉ RAM)\\
+			\textcolor{red}{\textbf{1}} \hspace{0.8cm} $\rightarrow$ \textcolor{green!50!black}{\texttt{0x1A2B}} \\
+			2 \hspace{0.8cm} $\rightarrow$ \texttt{0x3C4D} \\
+			... \hspace{0.6cm} $\rightarrow$ ...
+		};
+		
+		% Khối 3: Cây LCRS trên RAM
+		\node[box, right=3.5cm of hash] (ram_parent) {
+			\textbf{Node Cha (Trên RAM)}\\
+			\texttt{Địa chỉ: }\textcolor{green!50!black}{\texttt{0x1A2B}} \\
+			\texttt{name:} Nguyễn Văn Tèo \\
+			\texttt{pFirstChild:} \textcolor{orange}{\texttt{nullptr}} $\rightarrow$ \texttt{0x3C4D}
+		};
+		
+		\node[box, below=1.5cm of ram_parent] (ram_child) {
+			\textbf{Node Con mới tạo}\\
+			\texttt{Địa chỉ: 0x3C4D} \\
+			\texttt{name:} Nguyễn Văn Hùng
+		};
+		
+		% Vẽ mũi tên liên kết
+		\draw[->, red, very thick] (file.east) -- (hash.west) node[arrowtext, font=\small] {1. Truy vấn parentId};
+		\draw[->, green!50!black, very thick] (hash.east) -- (ram_parent.west) node[arrowtext, font=\small] {2. Trả về địa chỉ};
+		\draw[->, orange, very thick] (ram_parent.south) -- (ram_child.north) node[arrowtext, right, font=\small] {3. Nối con trỏ nhánh};
+		
+	\end{tikzpicture}
+\end{adjustbox}
+	\caption{Mô phỏng quy trình thực hiện truy vấn theo Định danh bằng cấu trúc Bảng băm}
+	\label{fig:Hash1}
+\end{figure}
+

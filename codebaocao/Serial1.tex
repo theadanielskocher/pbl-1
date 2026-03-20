@@ -1,0 +1,38 @@
+\begin{figure}[htbp]
+	\vspace*{-\baselineskip}
+	\centering
+	\begin{algorithm}[H]
+		\footnotesize
+		\caption{Hàm FlattenTree}
+		\begin{algorithmic}[1]
+			\Require currentNode, recordArray
+			
+			\State \Comment{Điều kiện dừng đệ quy}
+			\If{currentNode là RỖNG}
+			\Return
+			\EndIf
+			
+			\State \Comment{1. Chuyển đổi Node động thành Bản ghi tĩnh}
+			\State Tạo NewRecord
+			\State NewRecord.id = currentNode.id
+			
+			\If{currentNode có Cha}
+			\State NewRecord.parentId = currentNode.parent.id
+			\Else
+			\State NewRecord.parentId = 0  \Comment{0 ám chỉ đây là Cụ Tổ (Gốc)}
+			\EndIf
+			
+			\State Chép các thông tin (Tên, Năm sinh...) từ Node sang Bản ghi
+			
+			\State \Comment{2. Lưu vào mảng}
+			\State Thêm NewRecord vào recordArray
+			
+			\State \Comment{3. Đệ quy đi tiếp xuống nhánh Con và nhánh Em}
+			\State FlattenTree(currentNode.firstChild, recordArray)
+			\State FlattenTree(currentNode.nextSibling, recordArray)
+		\end{algorithmic}
+	\end{algorithm}
+	\vspace*{-\baselineskip}
+	\caption{Mã giả mô tả thuật toán phẳng hoá cây để lưu file}
+	\vspace*{-\baselineskip}
+\end{figure}

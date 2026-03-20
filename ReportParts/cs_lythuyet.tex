@@ -1,0 +1,68 @@
+\subsubsection{Cấu trúc dữ liệu cây}
+Cây (Tree) là một cấu trúc dữ liệu phi tuyến tính, được sử dụng để biểu diễn các mối quan hệ phân cấp giữa các đối tượng. Trong cấu trúc cây, mỗi phần tử được gọi là một nút (node), các nút được liên kết với nhau thông qua quan hệ cha - con. Một cây có các đặc điểm cơ bản sau:
+\begin{itemize}
+	\item Có một nút gốc (root), là nút không có cha.
+	\item Mỗi nút (trừ nút gốc) có duy nhất một nút cha.
+	\item Mỗi nút có thể có không hoặc nhiều nút con.
+	\item Không tồn tại chu trình trong cấu trúc cây.
+\end{itemize}
+
+Nhờ đặc tính phân cấp rõ ràng, cấu trúc cây đặc biệt phù hợp để mô hình hoá các hệ thống có quan hệ thứ bậc như cây thư mục, sơ đồ tổ chức, và gia phả.
+
+Trong bài toán quản lý gia phả, mỗi thành viên trong gia đình được biểu diễn bởi một nút trong cây, trong đó:
+\begin{itemize}
+	\item Quan hệ cha-con tương ứng với quan hệ giữa các nút.
+	\item Các thế hệ trong gia đình tương ứng với các mức (level) khác nhau của cây.
+	\item Tổ tiên cao nhất được xem là nút gốc của cây gia phả.
+\end{itemize}
+
+Cách biểu diễn này cho phép mô hình hoá một cây nhiều nhánh với số lượng con bất kỳ, đồng thời đảm bảo cấu trúc dữ liệu gọn nhẹ, linh hoạt và thuận tiện cho việc cài đặt các thuật toán duyệt cây, thêm hoặc mở rộng gia phả trong ngôn ngữ C++.
+
+\subsubsection{Biểu diễn cây bằng mô hình con đầu - anh em kế tiếp}
+
+Đối với cây nhiều nhánh, mỗi nút có thể có số lượng nút con không xác định. Nếu lưu trực tiếp danh sách con cho mỗi nút, cấu trúc dữ liệu sẽ trở nên phức tạp và khó quản lý. Để khắc phục vấn đề này, đề tài sử dụng mô hình con đầu-anh em kế tiếp (first-child / next-sibling) để biểu diễn cây gia phả.
+
+Trong mô hình này, mỗi nút trong cây chỉ cần hai liên kết chính:
+\begin{itemize}
+	\item Con trỏ \texttt{firstChild}: trỏ tới nút con đầu tiên của nút hiện tại.
+	\item Con trỏ \texttt{nextSibling}: trỏ tới nút anh/chị/em kế tiếp có cùng nút cha.
+\end{itemize}
+
+Ngoài ra, mỗi nút còn lưu con trỏ parent trỏ tới nút cha, giúp việc truy vấn quan hệ cha - con và di chuyển ngược trong cây trở nên thuận tiện.
+
+Với cách biểu diễn này:
+\begin{itemize}
+	\item Nếu một nút không có con, con trỏ \texttt{firstChild} có giá trị \texttt{nullptr}.
+	\item Nếu một nút là người con cuối cùng, con trỏ \texttt{nextSibling} có giá trị \texttt{nullptr}.
+	\item Các con của cùng một nút cha được liên kết thành một danh sách liên kết đơn thông qua \texttt{nextSibling}.
+\end{itemize}
+
+\input{tikz/tikz1}
+
+Trong chương trình, mỗi thành viên trong gia phả được biểu diễn bởi một cấu trúc \texttt{Person}, trong đó các mối quan hệ được quản lý hoàn toàn bằng con trỏ. Việc thêm một người con mới được thực hiện bằng cách:
+\begin{itemize}
+	\item Nếu người cha chưa có con, gán trực tiếp nút mới cho \texttt{firstChild}.
+	\item Nếu người cha đã có con, duyệt danh sách các con thông qua \texttt{nextSibling} để tìm người con cuối cùng (con út), sau đó nối nút mới vào cuối danh sách.
+\end{itemize}
+
+\input{codebaocao/code1}
+Cách biểu diễn này mang lại các ưu điểm sau:
+\begin{enumerate}
+	\item Biểu diễn được cây gia phả có số lượng con không giới hạn cho mỗi thành viên.
+	\item Cấu trúc dữ liệu gọn nhẹ, mỗi nút chỉ cần số lượng con trỏ cố định.
+	\item Thuận tiện cho việc duyệt cây theo chiều sâu và cài đặt các thuật toán xử lý quan hệ huyết thống.
+	\item Phù hợp với việc rèn luyện kỹ năng sử dụng con trỏ và quản lý bộ nhớ động trong C++.
+\end{enumerate}
+
+Nhờ những đặc điểm trên, mô hình con đầu - anh em kế tiếp sử dụng con trỏ là lựa chọn phù hợp để hiện thực chương trình quản lý gia phả trong phạm vi đề tài.
+
+\subsubsection{Duyệt cây và quản lý bộ nhớ}
+Trong chương trình, việc xử lý và hiển thị gia phả được thực hiện thông qua duyệt cây theo chiều sâu, cụ thể là duyệt tiền thứ tự. Theo cách duyệt này, mỗi nút được xử lý trước, sau đó lần lượt duyệt đến nút con đầu tiên thông qua con trỏ \texttt{firstChild}, và tiếp tục duyệt các nút anh/chị/em kế tiếp thông qua con trỏ \texttt{nextSibling}.
+
+Cách duyệt này rõ ràng phù hợp với mô hình con đầu - anh em kế tiếp và cho phép hiển thị gia phả theo thứ tự từ tổ tiên đến các thế hệ sau, phản ánh đúng cấu trúc phân cấp của gia đình.
+
+Do chương trình sử dụng cấp phát bộ nhớ động cho các nút trong cây, việc quản lý và giải phóng bộ nhớ là yêu cầu bắt buộc. Khi kết thúc chương trình, toàn bộ các nút trong cây được giải phóng bằng một hàm đệ quy, đảm bảo không xảy ra rò rỉ bộ nhớ. Việc kết hợp duyệt cây và quản lý bộ nhớ động giúp chương trình hoạt động ổn định và an toàn trong môi trường C++.
+
+\input{codebaocao/code2}
+
+Đến đây, những cơ sở lý thuyết đã được trình bày ở trên đã căn bản làm nền tảng cho toàn bộ quá trình thiết kế chương trình sau này.

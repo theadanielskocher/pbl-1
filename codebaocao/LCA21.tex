@@ -1,0 +1,20 @@
+\begin{figure}[htbp]
+	\vspace*{-\baselineskip}
+	\begin{algorithm}[H]
+		\footnotesize
+		\caption{FindAncestor(startP, dA)}
+		\begin{algorithmic}[1]
+			\State temp $\gets$ startP
+			\For{$i=1$ \to $dA$}
+			\If{temp.parent $\neq$ NULL}
+			\State temp $\gets$ temp.parent
+			\Else \ \Return NULL \Comment{Không đủ độ sâu thế hệ}
+			\EndIf
+			\EndFor
+			\State\ \Return temp
+		\end{algorithmic}
+	\end{algorithm}
+	\vspace*{-\baselineskip}
+	\caption{Mã giả mô tả pha thứ nhất của thuật toán truy vấn theo danh xưng}
+	\vspace*{-\baselineskip}
+\end{figure}

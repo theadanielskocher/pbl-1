@@ -1,0 +1,71 @@
+\begin{figure}[h]
+	\centering
+	\captionsetup{justification=centering}
+	\begin{tikzpicture}[
+		% Định nghĩa phong cách cho các nút (Node)
+		person/.style={
+			rectangle, 
+			rounded corners=3pt, 
+			draw=blue!60, 
+			top color=white, 
+			bottom color=blue!10,
+			very thick, 
+			inner sep=6pt, 
+			minimum size=1cm, 
+			font=\sffamily\bfseries,
+			drop shadow
+		},
+		% Đường nối đến con đầu tiên (First Child)
+		child-line/.style={
+			-Stealth, 
+			thick, 
+			blue!70!black,
+			line width=1.2pt
+		},
+		% Đường nối đến em kế tiếp (Next Sibling)
+		sibling-line/.style={
+			-Stealth, 
+			dashed, 
+			orange!80!black, 
+			line width=1.2pt
+		},
+		% Cấu trúc cây
+		level distance=2cm,
+		sibling distance=2.5cm,
+		show background rectangle, background rectangle/.style={draw=black}
+		]
+		
+		% Vẽ các Node
+		\node (root) [person] {Cụ Tổ (Root)}
+		child {
+			node (child1) [person] {Con Cả (A)}
+			child {
+				node (grandchild1) [person] {Cháu (A1)}
+				child [missing] % Chỗ này để trống để tạo khoảng cách
+			}
+		};
+		
+		% Các nút anh em (Next Sibling) nằm ngang hàng
+		\node (child2) [person, right=of child1] {Con Thứ (B)};
+		\node (child3) [person, right=of child2] {Con Út (C)};
+		\node (grandchild2) [person, right=of grandchild1] {Cháu (A2)};
+		
+		% Vẽ các mũi tên First Child (Màu xanh, nét liền)
+		\draw [child-line] (root.south) -- (child1.north) node[midway, left, font=\scriptsize, blue]{};
+		\draw [child-line] (child1.south) -- (grandchild1.north) node[midway, left, font=\scriptsize, blue]{};
+		
+		% Vẽ các mũi tên Next Sibling (Màu cam, nét đứt)
+		\draw [sibling-line] (child1.east) -- (child2.west) node[midway, above, font=\scriptsize, orange]{};
+		\draw [sibling-line] (child2.east) -- (child3.west) node[midway, above, font=\scriptsize, orange]{};
+		\draw [sibling-line] (grandchild1.east) -- (grandchild2.west) node[midway, above, font=\scriptsize, orange]{};
+		
+		% Chú thích (Legend)
+		\matrix [draw, below right, xshift=0cm, yshift=-3.2cm] at (current bounding box.north east) {
+			\draw [child-line, thin] (0,0) -- (0.5,0); & \node [font=\scriptsize] {pLeftChild (Con đầu)}; \\
+			\draw [sibling-line, thin] (0,0) -- (0.5,0); & \node [font=\scriptsize] {pRightSibling (Em kế)}; \\
+		};
+		
+	\end{tikzpicture}
+	\caption{Hình minh hoạ mô hình biểu diễn cây theo cấu trúc con đầu - anh em kế tiếp}
+	\label{fig:hinh1}
+\end{figure}

@@ -1,0 +1,18 @@
+Về cấu trúc dữ liệu cốt lõi, nhóm sử dụng Cấu trúc liên kết động (Dynamic Linked Structure). Mỗi thành viên trong gia phả được đại diện bởi một nút (Node) trong bộ nhớ Heap.
+
+\textbf{Định nghĩa Nút (Person Node):} Mỗi nút chứa các thành phần thông tin cá nhân (Data) và các thành phần liên kết (Pointers).
+
+\textbf{Cơ chế liên kết:} Nhóm sử dụng mô hình Left-Child Right-Sibling (LCRS) để biểu diễn cây đa phân, cụ thể:
+\begin{itemize}
+	\item \texttt{pLeftChild}: Con trỏ quản lý địa chỉ của người con đầu tiên.
+	\item \texttt{pRightSibling}: Con trỏ quản lý địa chỉ của người em kế tiếp trong cùng một thế hệ.
+	\item \texttt{pParent}: Con trỏ trỏ ngược về nút cha để tối ưu hóa thuật toán truy vết quan hệ (LCA).
+\end{itemize}
+
+Về quản lý bộ nhớ động, ý tưởng chính là tối ưu hóa tài nguyên hệ thống. Chỉ khi thêm một thành viên mới, chương trình mới sử dụng lệnh \texttt{new} để ``xin" cấp phát bộ nhớ. Điều này giúp hệ thống có thể quản lý gia phả với quy mô không giới hạn (tùy thuộc vào RAM) thay vì bị giới hạn bởi kích thước mảng khai báo trước. Ngoài ra, nhóm cài đặt cơ chế đệ quy để thu hồi bộ nhớ (\texttt{delete}) khi xóa một nhánh hoặc khi kết thúc chương trình, đảm bảo không xảy ra hiện tượng rò rỉ bộ nhớ (Memory Leak).
+
+Về các thuật sử dụng trên cây con trỏ:
+\begin{enumerate}
+	\item Duyệt cây: Nhóm sử dụng thuật toán Duyệt theo chiều sâu (DFS) thông qua đệ quy để hiển thị sơ đồ gia phả. Việc di chuyển giữa các nút thực chất là việc truy cập vào địa chỉ bộ nhớ được lưu trữ trong các con trỏ liên kết.
+	\item Định vị đối tượng: Thay vì tìm kiếm theo chỉ số (Index), nhóm xây dựng hàm tìm kiếm trả về địa chỉ vùng nhớ của đối tượng. Địa chỉ này sau đó được dùng làm tham số đầu vào cho các thao tác cập nhật hoặc thêm con cháu, giúp tốc độ truy cập dữ liệu đạt mức tối ưu.
+\end{enumerate}

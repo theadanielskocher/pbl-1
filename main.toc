@@ -1,0 +1,27 @@
+\contentsline {section}{Danh mục hình ảnh}{iii}{figure.caption.1}%
+\contentsline {section}{Mở đầu}{1}{figure.caption.1}%
+\contentsline {section}{\numberline {1}TỔNG QUAN ĐỀ TÀI}{2}{section.1}%
+\contentsline {section}{\numberline {2}CƠ SỞ LÝ THUYẾT}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Ý tưởng}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Cơ sở lý thuyết}{3}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Cấu trúc dữ liệu cây}{3}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Biểu diễn cây bằng mô hình con đầu - anh em kế tiếp}{4}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Duyệt cây và quản lý bộ nhớ}{5}{subsubsection.2.2.3}%
+\contentsline {section}{\numberline {3}TỔ CHỨC CẤU TRÚC DỮ LIỆU VÀ THUẬT TOÁN}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Phát biểu bài toán}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Cấu trúc dữ liệu}{6}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Thiết kế chung}{6}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Cài đặt các ràng buộc cần thiết}{7}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Thuật toán}{8}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Thuật toán Duyệt và Tìm kiếm}{8}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Thuật toán Xác định quan hệ}{9}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Thuật toán truy vấn theo danh xưng}{11}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Thuật toán lưu trữ và phục hồi}{13}{subsubsection.3.3.4}%
+\contentsline {section}{\numberline {4}CHƯƠNG TRÌNH VÀ KẾT QUẢ}{15}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Tổ chức chương trình}{15}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Kiến trúc tổng thể của chương trình}{15}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Cấu trúc tệp tin và phân rã chức năng}{15}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Ngôn ngữ cài đặt}{16}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Lý do sử dụng ngôn ngữ C++}{16}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Môi trường phát triển và công cụ hỗ trợ}{16}{subsubsection.4.2.2}%
+\contentsline {section}{Tài liệu tham khảo}{18}{subsubsection.4.2.2}%

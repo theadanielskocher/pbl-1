@@ -1,0 +1,233 @@
+% !TeX program = xelatex
+\documentclass[a4paper]{article}
+
+% ==================== FONT SETUP ====================
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{Times New Roman} % text font
+\setmathfont{XITS Math}
+\setsansfont{Arial} % sans font
+\setmonofont{Consolas} % mono font
+
+
+% ==================== PAGE LAYOUT ====================
+\usepackage[left=30mm, top=25mm, right=20mm, bottom=25mm]{geometry}
+\geometry{a4paper}
+
+% ==================== LANGUAGE & CAPTION ====================
+\renewcommand{\figurename}{Hình}
+
+% ==================== FONT SIZE ====================
+\usepackage{scrextend}
+\changefontsizes{13pt}
+
+% ==================== HEADER & FOOTER ====================
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\it PBL 1: Đồ án lập trình tính toán}
+\rhead{\it Chương trình quản lý gia phả}
+\lfoot{\it Nguyễn Đình Hải Đăng và Lê Bá Sơn}
+\rfoot{Trang \thepage}
+\cfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% ==================== GRAPHICS & DRAWING ====================
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{er, trees, positioning, arrows.meta, shadows, backgrounds, shapes.geometric}
+\usepackage{float}
+\usepackage[font=small,labelfont=bf]{caption}
+\captionsetup[figure]{font=small, labelfont=bf, justification=centering}
+
+\tikzset{
+    person/.style={rectangle, rounded corners=3pt, draw=blue!60, fill=blue!5, very thick, inner sep=6pt, font=\bfseries\footnotesize, drop shadow, align=center},
+    pathA/.style={fill=red!30, draw=red!80},
+    pathB/.style={fill=green!30, draw=green!80},
+    LCA/.style={fill=yellow!40, draw=orange!90, line width=2pt},
+    line/.style={-Stealth, thick, gray!80}
+}
+
+% ==================== MATH & ALGORITHM ====================
+\usepackage{amsmath}
+\usepackage{algorithm}
+\makeatletter
+\renewcommand{\ALG@name}{Mã giả}
+\makeatother
+\usepackage[noend]{algpseudocode}
+
+% ==================== CODE LISTING ====================
+\usepackage{listings}
+\lstdefinestyle{cppstyle}{
+	language=C++,
+	basicstyle=\ttfamily\footnotesize,
+	keywordstyle=\color{blue},
+	commentstyle=\color{green!50!black},
+	stringstyle=\color{red},
+	numbers=none,
+	showstringspaces=false,
+	breaklines=true,
+	frame=single,
+	framesep=5pt,
+	framerule=0.5pt
+}
+\lstdefinestyle{pseudostyle}{
+	basicstyle=\ttfamily\footnotesize,
+	numbers=none,
+	showstringspaces=false,
+	breaklines=true,
+	frame=single,
+	framesep=5pt,
+	framerule=0.5pt,
+}
+
+% ==================== COLOR & BOXES ====================
+\usepackage{xcolor}
+\usepackage[breakable]{tcolorbox}
+\usepackage{environ}
+\usepackage{longtable}
+\usepackage{array}
+
+% ==================== HYPERLINKS ====================
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=blue,
+	filecolor=blue,
+	linkcolor=blue,
+	urlcolor=blue
+}
+
+% ==================== TEXT FORMATTING ====================
+\usepackage{setspace}
+\setstretch{1.3}
+\usepackage{parskip}
+\setlength{\parindent}{0pt}
+\usepackage{titlesec}
+\titleformat{\section}
+	{\normalfont\fontsize{14}{17}\bfseries}
+	{\thesection.}{0.5em}{}
+\titleformat{\subsection}
+	{\normalfont\bfseries}
+	{\thesubsection.}{0.5em}{}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep}
+\setlist[enumerate]{noitemsep}
+
+% ==================== UTILITIES ====================
+\usepackage{verbatim}
+\usepackage{lipsum}
+\newcommand\HRule{\rule{\textwidth}{1pt}}
+\usepackage{adjustbox}
+
+% ==================== CUSTOM COMMANDS ====================
+\let\oldalgorithmic\algorithmic
+\let\endoldalgorithmic\endalgorithmic
+
+\newcommand{\CodeFile}[1]{%
+	\lstinputlisting[caption={#1}]{#1}%
+}
+
+\begin{document}
+	\pagenumbering{roman}
+	\begin{tikzpicture}[remember picture, overlay]
+		\draw[line width=3pt]
+		($(current page.north west)+(2.7cm,-1.8cm)$)
+		rectangle
+		($(current page.south east)+(-1.8cm,1.8cm)$);
+	\end{tikzpicture}
+	
+	\begin{center}
+		\textbf{ĐẠI HỌC ĐÀ NẴNG} \\
+		\textbf{TRƯỜNG ĐẠI HỌC BÁCH KHOA} \\
+		{\large \textbf{KHOA CÔNG NGHỆ THÔNG TIN}}
+	\end{center}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.2\textwidth]{DUT-ITF-Logo.jpg} 
+		%Lưu ý: Bạn cần thay thế 'logo.png' bằng đường dẫn đến tệp logo của bạn.
+	\end{figure}
+	
+	\begin{center}
+		\vspace{2cm}
+		{\huge \textbf{ĐỒ ÁN LẬP TRÌNH TÍNH TOÁN}} \\
+		{\LARGE \textbf{CHƯƠNG TRÌNH QUẢN LÝ GIA PHẢ}}
+		\vspace{3cm}
+	\end{center}
+	
+	\begin{center}
+		{\large
+		\makebox[0.8\textwidth][l]{\begin{tabular}{p{6.5cm}l}
+				Giảng viên hướng dẫn: & \textbf{TS. Nguyễn Văn Hiệu} \\
+				Sinh viên thực hiện: & \\
+				\textbf{Nguyễn Đình Hải Đăng} & \textbf{Lớp: 25T\_KHDL} \\
+				\textbf{Lê Bá Sơn} & \textbf{Lớp: 25T\_KHDL} \\
+				\end{tabular}}
+		}
+	\end{center}
+	
+	\vfill
+	
+	\begin{center}
+		{\large Đà Nẵng, tháng 6 năm 2026}
+	\end{center}
+	
+	\thispagestyle{empty} 
+	\clearpage
+	
+	% === TRANG 2: MỤC LỤC ===
+	\newpage
+    \thispagestyle{empty}
+	\renewcommand{\contentsname}{MỤC LỤC}
+	\tableofcontents
+	
+	% === TRANG 3: DANH MỤC HÌNH ẢNH ===
+	\newpage
+    \thispagestyle{empty}
+	\renewcommand{\listfigurename}{}
+	\begin{center}
+		{\large \bfseries DANH MỤC HÌNH ẢNH}
+	\end{center}
+	\listoffigures
+	\addcontentsline{toc}{section}{Danh mục hình ảnh}
+	
+	% === TRANG 6: NỘI DUNG CHÍNH ===
+	\newpage
+	\thispagestyle{empty}
+	% Đánh số trang bắt đầu từ phần nội dung (tùy chọn, thường là trang 1)
+	\setcounter{page}{1} 
+	\pagenumbering{arabic}
+	\addcontentsline{toc}{section}{Mở đầu}
+	\begin{center}
+		{\large \textbf{MỞ ĐẦU}}
+	\end{center}
+	
+	\vspace{2\baselineskip}
+	
+	\input{Phuluc/tongquan.tex }
+	\newpage
+	
+	\section{TỔNG QUAN ĐỀ TÀI}
+	
+	\input{ReportParts/Tongquandetai}
+	
+	\section{CƠ SỞ LÝ THUYẾT}
+	\subsection{Ý tưởng}
+	\input{ReportParts/ytuong}
+	\subsection{Cơ sở lý thuyết}
+	\input{ReportParts/cs_lythuyet}
+	
+	\section{TỔ CHỨC CẤU TRÚC DỮ LIỆU VÀ THUẬT TOÁN}
+	\input{ReportParts/dsa}
+
+    \section{CHƯƠNG TRÌNH VÀ KẾT QUẢ}
+    \input{ReportParts/program-results}
+    
+	% === PHỤ LỤC ===
+	\appendix
+	
+	\renewcommand{\refname}{TÀI LIỆU THAM KHẢO}
+	\input{References.tex}
+\end{document}
