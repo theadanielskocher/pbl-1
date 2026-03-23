@@ -1,0 +1,21 @@
+\subsection{Kết luận}
+Sau quá trình nghiên cứu, thiết kế và cài đặt hệ thống "Quản lý Gia phả", nhóm đồ án đã hoàn thành các mục tiêu đề ra với những kết quả cụ thể như sau:
+
+\textit{Một là}, chương trình đã triển khai tương đối hoàn chỉnh cấu trúc dữ liệu Cây con trái - Em phải (LCRS) để mô hình hóa các mối quan hệ gia đình đa phân phức tạp một cách tối ưu về bộ nhớ. Hệ thống đã được mô-đun hóa hoàn chỉnh thành các phân hệ độc lập, giúp mã nguồn trở nên sáng sủa, dễ bảo trì và mở rộng.
+
+\textit{Hai là}, nhóm đã xây dựng và tối ưu hóa thành công thuật toán xác định quan hệ dựa trên Tổ tiên chung gần nhất (LCA) và hệ tọa độ thế hệ ($d_A, d_B$). Hệ thống có khả năng nhận diện chính xác các vai vế trong tiếng Việt từ cơ bản (Cha, Mẹ, Con) đến phức tạp (Anh/Chị/Em họ, Cháu bàng hệ, Hậu duệ xa).
+
+\textit{Ba là}, chương trình đáp ứng tốt các nhu cầu thực tế như lưu trữ dữ liệu lâu dài qua tệp nhị phân, nhập liệu hàng loạt từ tệp văn bản và cung cấp giao diện tương tác trực quan qua dòng lệnh.
+
+\textit{Bốn là}, thông qua đồ án này, nhóm đã làm chủ được kỹ năng quản lý bộ nhớ động với con trỏ trong C++, hiểu sâu về liên kết mô-đun và cách tổ chức một dự án phần mềm.
+
+\subsection{Hướng phát triển}
+
+Dù đã đạt được những kết quả khả quan, hệ thống vẫn còn nhiều tiềm năng để nâng cấp và hoàn thiện trong tương lai:
+\begin{enumerate}
+	\item Thay thế giao diện dòng lệnh (CLI) bằng các framework đồ họa như Qt hoặc SFML. Việc này sẽ cho phép hiển thị sơ đồ cây gia phả dưới dạng hình ảnh trực quan, có thể kéo thả và thu phóng, giúp người dùng phổ thông dễ dàng tiếp cận hơn.
+	\item Thay vì lưu trữ tệp tin cục bộ, hệ thống có thể chuyển sang sử dụng SQLite hoặc PostgreSQL. Điều này giúp quản lý hàng nghìn thành viên một cách nhanh chóng, hỗ trợ các truy vấn phức tạp và đảm bảo an toàn dữ liệu cao hơn.
+	\item Phát triển tính năng đính kèm hình ảnh, video ký ức hoặc các tài liệu quét (scan) sắc phong, gia phả cổ cho từng cá nhân, biến phần mềm thành một ``Bảo tàng số'' của dòng họ.
+	\item Triển khai thuật toán khớp chuỗi gần đúng (fuzzy search) để hỗ trợ tìm kiếm khi người dùng nhập tên không chính xác hoặc không đủ dấu, đồng thời bổ sung bộ lọc theo ngày sinh, nghề nghiệp hoặc địa điểm.
+	\item Phát triển phiên bản Web hoặc Mobile, hỗ trợ đồng bộ hóa dữ liệu qua Cloud để các thành viên trong dòng họ ở khắp nơi đều có thể cùng đóng góp và tra cứu thông tin chung.
+\end{enumerate}
