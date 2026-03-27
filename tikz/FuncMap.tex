@@ -1,0 +1,70 @@
+\begin{sidewaysfigure}
+	\begin{tikzpicture}[
+		node distance=1cm,
+		block/.style={rectangle, draw=blue!70, fill=blue!5, thick, minimum width=3cm, minimum height=0.8cm, align=center, font=\bfseries\small, rounded corners},
+		subblock/.style={rectangle, draw=gray!60, fill=gray!5, minimum width=2.5cm, minimum height=0.7cm, align=center, font=\footnotesize},
+		mainblock/.style={rectangle, draw=red!70, fill=red!10, thick, minimum width=4cm, minimum height=1cm, align=center, font=\bfseries},
+		managerblock/.style={rectangle, draw=orange!70, fill=orange!5, thick, minimum width=3.5cm, minimum height=0.8cm, align=center, font=\bfseries\small},
+		arrow/.style={-stealth, thick, draw=gray!80}
+		]
+		
+		% --- TẦNG 1: ĐIỀU KHIỂN ---
+		\node[mainblock] (main) {main.cpp \\ \scriptsize (Vòng lặp điều hướng)};
+		
+		% --- TẦNG 2: MODULE LOGIC (Dàn hàng ngang rộng) ---
+		\node[block, below=of main] (rel) {Relationship.cpp \\ \scriptsize (Phân tích quan hệ)};
+		\node[block, left=5cm of rel] (search) {SearchEngine.cpp \\ \scriptsize (Tìm kiếm thực thể)};
+		\node[block, right=5cm of rel] (file) {FileHandler.cpp \\ \scriptsize (Xử lý tệp tin)};
+		
+		% --- TẦNG 3: CÁC HÀM CHI TIẾT ---
+		% Nhánh Search
+		\node[subblock, below left=0.8cm and -0.5cm of search] (dfs) {SearchByName() \\ \scriptsize (Thuật toán DFS)};
+		\node[subblock, below right=0.8cm and -0.5cm of search] (hash) {IDLookup() \\ \scriptsize (Dùng Bảng băm)};
+		
+		% Nhánh Relationship
+		\node[subblock, below=1cm of rel] (lca) {DetermineRel() \\ \scriptsize (Thuật toán LCA)};
+		\node[subblock, left=0.3cm of lca] (path) {GetPathToRoot()};
+		\node[subblock, right=0.3cm of lca] (anc) {FindAncestor()};
+		\node[subblock, below=0.6cm of anc] (coll) {CollectCands() \\ \scriptsize (Tìm theo tầng)};
+		
+		% Nhánh File
+		\node[subblock, below left=0.8cm and -0.4cm of file] (save) {SaveFile() \\ \scriptsize (Serialization)};
+		\node[subblock, below right=0.8cm and -0.4cm of file] (load) {LoadFile() \\ \scriptsize (Reconstruct)};
+		
+		% --- TẦNG 4: TREE MANAGER (Dùng chung) ---
+		\node[managerblock, below=4.5cm of rel] (manager) {TreeManager.cpp \\ \scriptsize (Dịch vụ bộ nhớ RAM)};
+		\node[subblock, left=0.5cm of manager] (add) {AddChild()};
+		\node[subblock, right=0.5cm of manager] (free) {FreeTree()};
+		
+		% --- KẾT NỐI MŨI TÊN ---
+		% Main gọi 3 module chính
+		\draw[arrow] (main.south) -- (rel.north);
+		\draw[arrow] (main.south) -- ++(0,-0.6) -| (search.north);
+		\draw[arrow] (main.south) -- ++(0,-0.6) -| (file.north);
+		
+		% Nội bộ Search
+		\draw[arrow] (search.south) -- ++(0,-0.4) -| (dfs.north);
+		\draw[arrow] (search.south) -- ++(0,-0.4) -| (hash.north);
+		
+		% Nội bộ Relationship
+		\draw[arrow] (rel.south) -- (lca.north);
+		\draw[arrow] (rel.south) -- ++(0,-0.5) -| (path.north);
+		\draw[arrow] (rel.south) -- ++(0,-0.5) -| (anc.north);
+		\draw[arrow] (anc.south) -- (coll.north);
+		
+		% Nội bộ File
+		\draw[arrow] (file.south) -- ++(0,-0.4) -| (save.north);
+		\draw[arrow] (file.south) -- ++(0,-0.4) -| (load.north);
+		
+		% Tất cả đổ về TreeManager khi cần thao tác nút
+		\coordinate (mid) at (0,-6.8);
+		\draw[arrow, dashed] (dfs.south) |- (mid) -| (manager.north);
+		\draw[arrow, dashed] (lca.south) -- (manager.north);
+		\draw[arrow, dashed] (load.south) |- (mid) -| (manager.north);
+		
+		\draw[arrow] (manager.west) -- (add.east);
+		\draw[arrow] (manager.east) -- (free.west);
+		
+	\end{tikzpicture}
+	\caption{Sơ đồ cấu trúc các hàm chính của chương trình}
+\end{sidewaysfigure}

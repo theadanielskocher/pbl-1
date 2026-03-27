@@ -160,7 +160,14 @@ Mã giả mô tả thuật toán của pha ở hình \ref{fig:Rel1}.
 
 Tổng quát, thuật toán chung của ta vẫn tiệm cận mức $O(H)$, rõ ràng là hiệu quả hơn nhiều so với việc quét toàn bộ người trong gia phả. Ngoài ra, thuật toán này còn có ưu điểm là xử lý được trường hợp đa kết quả (ví dụ: tìm ``Chú'' có thể cho ra nhiều người, việc tìm người cụ thể do người dùng quyết định).
 
-\vspace*{-\baselineskip}
+Ngoài ra, vì cấu trúc LCRS truyền thống chỉ lưu trữ các thực thể có quan hệ huyết thống trực tiếp, khiến các thành viên nữ (vợ) trở thành ``điểm mù'' (nghĩa là, không thể thực hiện bất kỳ chức năng nào của hệ thống trên những người này) của giải thuật duyệt cây. Vì vậy, giải pháp cho điều này là sử dụng cơ chế Proxy Node (Nút đại diện). Khi truy vấn ``Mẹ'', hệ thống thực hiện tìm kiếm gián tiếp: \texttt{Mother(A) = Spouse(Parent(A))}, cụ thể:
+\begin{itemize}
+	\item Hệ thống xác định nút Cha của A (là nút $P$ trong cây).
+	\item Sau đó, hệ thống truy xuất vào thuộc tính spouseName (vợ) của nút $P$.
+\end{itemize}
+
+Cách làm này giữ cho cây luôn là cây đơn gốc (single-root tree), giúp các thuật toán duyệt đệ quy và LCA luôn đạt độ phức tạp tối ưu nhất.
+
 \subsubsection{Thuật toán lưu trữ và phục hồi}
 
 Trong môi trường quản lý dữ liệu bằng con trỏ động, địa chỉ bộ nhớ của các thực thể (\texttt{Person}) chỉ có giá trị nội hàm trong phiên làm việc hiện tại của RAM. Để đảm bảo tính bền vững của dữ liệu, nhóm áp dụng kỹ thuật Tuần tự hóa nhị phân (Binary Serialization) kết hợp với thuật toán Phẳng hóa đồ thị cây.

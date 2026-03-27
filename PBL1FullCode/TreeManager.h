@@ -6,7 +6,7 @@
 Person* CreateFamily(string name, string gender);
 Person* AddChild(Person* parent, string name, string gender);
 void DisplayTree(Person* current, int level);
-void ShowDetail(Person* p);
+void ShowDetail(SearchResult p);
 void UpdatePersonInfo(Person* p);
 
 void FreeTree(Person* current);

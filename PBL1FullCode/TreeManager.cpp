@@ -62,14 +62,38 @@ void DisplayTree(Person* current, int level) {
     DisplayTree(current->nextSibling, level);
 }
 
-void ShowDetail(Person* p) {
-    if (p == nullptr) return;
-    cout << "\n[ THONG TIN CHI TIET ]\n";
-    cout << "ID: " << p->id << " | Ho ten: " << p->name << " (" << p->gender << ")\n";
-    cout << "Ngay sinh: " << p->birthday << " | Nghe nghiep: " << p->job << endl;
-    cout << "Tinh trang: " << p->deathDay << " | Vo/Chong: " << p->spouseName << endl;
-}
+void ShowDetail(SearchResult res) {
+    if (res.node == nullptr) return;
 
+    Person* p = res.node;
+    cout << "\n" << DUT_BLUE << "========== THONG TIN CHI TIET ==========" << RESET << endl;
+
+    if (res.isSpouse) {
+        // TRƯỜNG HỢP 1: Đang xem thông tin Bà/Mẹ (Spouse)
+        cout << BOLD << "Ho va ten: " << RESET << GREEN << p->spouseName << RESET << " (Phu nhan)" << endl;
+        cout << BOLD << "Gioi tinh: " << RESET << "Nu" << endl;
+        cout << BOLD << "Phu quan:  " << RESET << p->name << " (ID: " << p->id << ")" << endl;
+        cout << BOLD << "Gia dinh:  " << RESET << "Nhanh cua " << (p->parent ? p->parent->name : "Ong To") << endl;
+    } 
+    else {
+        // TRƯỜNG HỢP 2: Đang xem thông tin Nút chính quy (Nam/Con cái)
+        cout << BOLD << "Ho va ten: " << RESET << GREEN << p->name << RESET << endl;
+        cout << BOLD << "ID:        " << RESET << p->id << endl;
+        cout << BOLD << "Gioi tinh: " << RESET << p->gender << endl;
+        cout << BOLD << "Ngay sinh: " << RESET << p->birthday << endl;
+        if (p->gender == "Nu") {
+        	cout << BOLD << "Phu quan:  " << RESET << p->spouseName << endl;
+		}
+        else if (!p->spouseName.empty()) {
+            cout << BOLD << "Phu nhan:  " << RESET << p->spouseName << endl;
+        }
+        
+        if (p->parent != nullptr) {
+            cout << BOLD << "Than sinh: " << RESET << p->parent->name << endl;
+        }
+    }
+    cout << DUT_BLUE << "========================================" << RESET << endl;
+}
 void UpdatePersonInfo(Person* p) {
     if (p == nullptr) return;
 
@@ -99,10 +123,8 @@ void ClearCurrentFamily() {
         return;
     }
 
-    // 1. Giai phong de quy tat ca cac nut tren RAM
     FreeTree(root); 
 
-    // 2. Reset cac bien dieu khien ve trang thai ban dau
     root = nullptr;
     global_id_counter = 1;
 

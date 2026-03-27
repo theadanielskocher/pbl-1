@@ -21,61 +21,71 @@ vector<Person*> GetPathToRoot(Person* p) {
     return path;
 }
 
-string DetermineRelationship(Person* pA, Person* pB) {
+// Thêm 2 tham số bool để xác định đối tượng có phải là "Vợ" của nút đang xét không
+string DetermineRelationship(Person* pA, bool isSpouseA, Person* pB, bool isSpouseB) {
     if (pA == nullptr || pB == nullptr) return "Loi: Nguoi khong ton tai!";
-    if (pA == pB) return "Chinh la mot nguoi!";
+    
+    // Nếu A và B trỏ cùng 1 nút và cả hai đều là vợ/chồng hoặc cả hai là chính nút đó
+    if (pA == pB && isSpouseA == isSpouseB) return "Chinh la mot nguoi!";
+    if (pA == pB && isSpouseA != isSpouseB) return "Quan he: Vo chong";
 
-    // Lấy đường đi từ gốc đến A và B
     vector<Person*> pathA = GetPathToRoot(pA);
     vector<Person*> pathB = GetPathToRoot(pB);
 
     int lcaIndex = -1;
     int minLen = min((int)pathA.size(), (int)pathB.size());
     for (int i = 0; i < minLen; i++) {
-        if (pathA[i] == pathB[i]) {
-            lcaIndex = i; 
-        } else break;
+        if (pathA[i] == pathB[i]) lcaIndex = i; 
+        else break;
     }
 
-    if (lcaIndex == -1) return "Khong co quan he ho hang (khac cay)";
+    if (lcaIndex == -1) return "Khong co quan he ho hang";
 
     int dA = (pathA.size() - 1) - lcaIndex;
     int dB = (pathB.size() - 1) - lcaIndex;
     Person* lca = pathA[lcaIndex];
 
-    // --- 1. Cùng thế hệ ---
-    if (dA == dB) {
-        if (dA == 1) { // Anh / Chị / Em ruột
-            bool aIsOlder = false;
-            Person* curr = lca->firstChild;
-            while (curr != nullptr) {
-                if (curr == pA) { aIsOlder = true; break; }
-                if (curr == pB) { aIsOlder = false; break; }
-                curr = curr->nextSibling;
-            }
-            if (aIsOlder) return (pA->gender == "Nam") ? "Anh trai" : "Chi gai";
-            else return (pA->gender == "Nam") ? "Em trai" : "Em gai";
+    // --- XỬ LÝ DANH XƯNG TỔNG QUÁT (Dựa trên Proxy) ---
+    
+    // 1. A là bề trên của B (Trực hệ ngược)
+    if (dB == 0) {
+        if (dA == 1) return isSpouseA ? "Me" : "Cha";
+        if (dA == 2) return isSpouseA ? "Ba noi" : "Ong noi";
+        if (dA == 3) return isSpouseA ? "Ba co" : "Ong co";
+        return isSpouseA ? "To tien (Nu)" : "To tien (Nam)";
+    }
+
+    // 2. B là bề trên của A (Trực hệ thuận)
+    if (dA == 0) {
+        if (isSpouseA) return "Nang dau"; // Vợ của nút A (A=B) là con dâu của B
+        if (dB == 1) return "Con";
+        if (dB == 2) return "Chau";
+        return "Hau due";
+    }
+
+    // 3. Quan hệ ngang hàng (Anh chị em)
+    if (dA == 1 && dB == 1) {
+        bool aIsOlder = false;
+        Person* curr = lca->firstChild;
+        while (curr != nullptr) {
+            if (curr == pA) { aIsOlder = true; break; }
+            if (curr == pB) { aIsOlder = false; break; }
+            curr = curr->nextSibling;
         }
-        return "Anh/Chi/Em ho (" + to_string(dA - 1) + " doi)";
+        
+        if (isSpouseA) {
+            if (aIsOlder) return (pA->gender == "Nam") ? "Chi dau" : "Anh re";
+            else return (pA->gender == "Nam") ? "Em dau" : "Em re";
+        }
+
+        if (aIsOlder) return (pA->gender == "Nam") ? "Anh trai" : "Chi gai";
+        return (pA->gender == "Nam") ? "Em trai" : "Em gai";
     }
 
-    // --- 2. Quan hệ Trực hệ ---
-    if (dA == 0) { // A là tổ tiên của B
-        if (dB == 1) return (pA->gender == "Nam") ? "Cha" : "Me";
-        if (dB == 2) return (pA->gender == "Nam") ? "Ong" : "Ba";
-        return "To tien (doi thu " + to_string(dB) + ")";
-    }
-    if (dB == 0) { // B là tổ tiên của A
-        if (dA == 1) return "Con";
-        if (dA == 2) return "Chau";
-        return "Hau due (doi thu " + to_string(dA) + ")";
-    }
-
-    // --- 3. Quan hệ Bàng hệ (Cô, Chú, Bác...) ---
+    // 4. Quan hệ bàng hệ (Cô, Chú, Bác, Dì...)
     if (dA == 1 && dB == 2) {
-        // A là anh/chị/em của Cha/Mẹ B
-        Person* aNode = pathA[lcaIndex + 1];     // Chính là A
-        Person* parentOfB = pathB[lcaIndex + 1]; // Cha/mẹ của B
+        Person* aNode = pathA[lcaIndex + 1];
+        Person* parentOfB = pathB[lcaIndex + 1];
         
         bool aIsOlder = false;
         Person* curr = lca->firstChild;
@@ -85,36 +95,16 @@ string DetermineRelationship(Person* pA, Person* pB) {
             curr = curr->nextSibling;
         }
 
-        if (aIsOlder) {
-            return (pA->gender == "Nam") ? "Bac trai" : "Bac gai";
-        } else {
-            // Theo gia phả nội tộc, B là con của cha (Nam), nên em của cha gọi là Chú/Cô
-            return (pA->gender == "Nam") ? "Chu" : "Co"; 
+        if (isSpouseA) { // Vợ của bác/chú/cô
+            if (aIsOlder) return "Bac gai (Vo bac)";
+            return (pA->gender == "Nam") ? "Thim (Vo chu)" : "Duong (Chong co)";
         }
-    }
-
-    if (dA == 2 && dB == 1) {
-        // B là anh/chị/em của Cha/Mẹ A (A là cháu)
-        Person* parentOfA = pathA[lcaIndex + 1]; // Cha/mẹ của A
-        Person* bNode = pathB[lcaIndex + 1];     // Chính là B
         
-        bool bIsOlder = false;
-        Person* curr = lca->firstChild;
-        while (curr != nullptr) {
-            if (curr == bNode) { bIsOlder = true; break; }
-            if (curr == parentOfA) { bIsOlder = false; break; }
-            curr = curr->nextSibling;
-        }
-
-        if (bIsOlder) {
-            return "Chau (goi bang Bac)";
-        } else {
-            return (pB->gender == "Nam") ? "Chau (goi bang Chu)" : "Chau (goi bang Co)";
-        }
+        if (aIsOlder) return (pA->gender == "Nam") ? "Bac trai" : "Bac gai";
+        return (pA->gender == "Nam") ? "Chu" : "Co";
     }
 
-    // --- 4. Các trường hợp khác ---
-    return "Ho hang xa (Cach nhau " + to_string(dA + dB) + " bac)";
+    return "Ho hang xa (Cach " + to_string(dA + dB) + " doi)";
 }
 
 // ======================================================================
@@ -254,4 +244,30 @@ vector<Person*> FindRelativesByRelationship(Person* startPerson, string relation
     }
 
     return finalResults;
+}
+
+vector<string> FindRelativesNames(Person* startPerson, string relationName) {
+    vector<string> names;
+    if (startPerson == nullptr) return names;
+
+    // Các trường hợp mẫu hệ trực tiếp (Tìm vợ của các nút tổ tiên)
+    if (relationName == "Me") {
+        if (startPerson->parent != nullptr && !startPerson->parent->spouseName.empty())
+            names.push_back(startPerson->parent->spouseName + " (Vo cua " + startPerson->parent->name + ")");
+        return names;
+    }
+    
+    if (relationName == "Ba") {
+        Person* dad = startPerson->parent;
+        if (dad != nullptr && dad->parent != nullptr && !dad->parent->spouseName.empty())
+            names.push_back(dad->parent->spouseName + " (Ba noi - Vo cua " + dad->parent->name + ")");
+        return names;
+    }
+
+    vector<Person*> results = FindRelativesByRelationship(startPerson, relationName);
+    for (Person* p : results) {
+        names.push_back(p->name);
+    }
+    
+    return names;
 }

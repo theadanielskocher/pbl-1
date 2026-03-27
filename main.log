@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2026.2.27)  21 MAR 2026 22:12
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2026.2.27)  27 MAR 2026 22:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1099,16 +1099,25 @@ Package caption Info: scrextend package is loaded.
 \caption@addmargin@hsize=\dimen289
 \caption@addmargin@linewidth=\dimen290
 )
+(C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.st
+y
+Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
+ (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count336
+\rotFPtop=\skip68
+\rotFPbot=\skip69
+\rot@float@box=\box70
+\rot@mess@toks=\toks39
+)
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm
 .sty
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
- (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
-Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-)
-\@float@every@algorithm=\toks39
-\c@algorithm=\count336
+\@float@every@algorithm=\toks40
+\c@algorithm=\count337
 )
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algpseu
 docode.sty
@@ -1119,32 +1128,32 @@ hmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count337
-\c@ALG@rem=\count338
-\c@ALG@nested=\count339
-\ALG@tlm=\skip68
-\ALG@thistlm=\skip69
-\c@ALG@Lnr=\count340
-\c@ALG@blocknr=\count341
-\c@ALG@storecount=\count342
-\c@ALG@tmpcounter=\count343
-\ALG@tmplength=\skip70
+\c@ALG@line=\count338
+\c@ALG@rem=\count339
+\c@ALG@nested=\count340
+\ALG@tlm=\skip70
+\ALG@thistlm=\skip71
+\c@ALG@Lnr=\count341
+\c@ALG@blocknr=\count342
+\c@ALG@storecount=\count343
+\c@ALG@tmpcounter=\count344
+\ALG@tmplength=\skip72
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.st
 y
-\lst@mode=\count344
-\lst@gtempboxa=\box70
-\lst@token=\toks40
-\lst@length=\count345
+\lst@mode=\count345
+\lst@gtempboxa=\box71
+\lst@token=\toks41
+\lst@length=\count346
 \lst@currlwidth=\dimen291
-\lst@column=\count346
-\lst@pos=\count347
+\lst@column=\count347
+\lst@pos=\count348
 \lst@lostspace=\dimen292
 \lst@width=\dimen293
-\lst@newlines=\count348
-\lst@lineno=\count349
+\lst@newlines=\count349
+\lst@lineno=\count350
 \lst@maxwidth=\dimen294
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.st
@@ -1153,9 +1162,9 @@ File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 )
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count350
-\lst@skipnumbers=\count351
-\lst@framebox=\box71
+\c@lstnumber=\count351
+\lst@skipnumbers=\count352
+\lst@framebox=\box72
 )
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cf
 g
@@ -1169,8 +1178,8 @@ Package: tcolorbox 2025/07/08 version 6.7.1 text color boxes
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks41
-\verbatim@line=\toks42
+\every@verbatim=\toks42
+\verbatim@line=\toks43
 \verbatim@in@stream=\read3
 )
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
@@ -1183,21 +1192,21 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.st
 y
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count352
+\etb@tempcnta=\count353
 )
-\tcb@titlebox=\box72
-\tcb@upperbox=\box73
-\tcb@lowerbox=\box74
-\tcb@phantombox=\box75
-\c@tcbbreakpart=\count353
-\c@tcblayer=\count354
-\c@tcolorbox@number=\count355
-\l__tcobox_tmpa_box=\box76
+\tcb@titlebox=\box73
+\tcb@upperbox=\box74
+\tcb@lowerbox=\box75
+\tcb@phantombox=\box76
+\c@tcbbreakpart=\count354
+\c@tcblayer=\count355
+\c@tcolorbox@number=\count356
+\l__tcobox_tmpa_box=\box77
 \l__tcobox_tmpa_dim=\dimen295
-\tcb@temp=\box77
 \tcb@temp=\box78
 \tcb@temp=\box79
 \tcb@temp=\box80
+\tcb@temp=\box81
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakab
 le.code.tex
@@ -1216,37 +1225,37 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
 )
 Package pdfcol Info: pdfTeX's color stacks are not available.
-\tcb@testbox=\box81
-\tcb@totalupperbox=\box82
-\tcb@totallowerbox=\box83
+\tcb@testbox=\box82
+\tcb@totalupperbox=\box83
+\tcb@totallowerbox=\box84
 ))
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
-\LTleft=\skip71
-\LTright=\skip72
-\LTpre=\skip73
-\LTpost=\skip74
-\LTchunksize=\count356
+\LTleft=\skip73
+\LTright=\skip74
+\LTpre=\skip75
+\LTpost=\skip76
+\LTchunksize=\count357
 \LTcapwidth=\dimen296
-\LT@head=\box84
-\LT@firsthead=\box85
-\LT@foot=\box86
-\LT@lastfoot=\box87
-\LT@gbox=\box88
-\LT@cols=\count357
-\LT@rows=\count358
-\c@LT@tables=\count359
-\c@LT@chunks=\count360
-\LT@p@ftn=\toks43
+\LT@head=\box85
+\LT@firsthead=\box86
+\LT@foot=\box87
+\LT@lastfoot=\box88
+\LT@gbox=\box89
+\LT@cols=\count358
+\LT@rows=\count359
+\c@LT@tables=\count360
+\c@LT@chunks=\count361
+\LT@p@ftn=\toks44
 ) (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \col@sep=\dimen297
-\ar@mcellbox=\box89
+\ar@mcellbox=\box90
 \extrarowheight=\dimen298
-\NC@list=\toks44
-\extratabsurround=\skip75
-\backup@length=\skip76
-\ar@cellbox=\box90
+\NC@list=\toks45
+\extratabsurround=\skip77
+\backup@length=\skip78
+\ar@cellbox=\box91
 )
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
 y
@@ -1290,7 +1299,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count361
+\c@section@level=\count362
 )
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringen
 c.sty
@@ -1298,8 +1307,8 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen299
-\Hy@linkcounter=\count362
-\Hy@pagecounter=\count363
+\Hy@linkcounter=\count363
+\Hy@pagecounter=\count364
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
@@ -1308,7 +1317,7 @@ File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 y
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count364
+\Hy@SavedSpaceFactor=\count365
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
@@ -1320,7 +1329,7 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count365
+\c@Hy@tempcnt=\count366
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip19
@@ -1337,7 +1346,7 @@ alc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count366
+\Fld@menulength=\count367
 \Field@Width=\dimen301
 \Fld@charsize=\dimen302
 Package hyperref Info: Hyper figures OFF on input line 6078.
@@ -1347,19 +1356,19 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count367
-\c@Item=\count368
-\c@Hfootnote=\count369
+\Hy@abspage=\count368
+\c@Item=\count369
+\c@Hfootnote=\count370
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex.def
 File: hxetex.def 2025-07-12 v7.01o Hyperref driver for XeTeX
-\pdfm@box=\box91
-\c@Hy@AnnotLevel=\count370
-\HyField@AnnotCount=\count371
-\Fld@listcount=\count372
-\c@bookmark@seq@number=\count373
+\pdfm@box=\box92
+\c@Hy@AnnotLevel=\count371
+\HyField@AnnotCount=\count372
+\Fld@listcount=\count373
+\c@bookmark@seq@number=\count374
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerun
 filecheck.sty
@@ -1372,9 +1381,9 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip77
+\Hy@SectionHShift=\skip79
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 99.
+Package hyperref Info: Option `colorlinks' set `true' on input line 100.
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.st
 y
@@ -1386,12 +1395,12 @@ Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.st
 y
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box92
-\beforetitleunit=\skip78
-\aftertitleunit=\skip79
+\ttl@box=\box93
+\beforetitleunit=\skip80
+\aftertitleunit=\skip81
 \ttl@plus=\dimen303
 \ttl@minus=\dimen304
-\ttl@toksa=\toks45
+\ttl@toksa=\toks46
 \titlewidth=\dimen305
 \titlewidthlast=\dimen306
 \titlewidthfirst=\dimen307
@@ -1399,17 +1408,17 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.st
 y
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\labelindent=\skip80
+\labelindent=\skip82
 \enit@outerparindent=\dimen308
-\enit@toks=\toks46
-\enit@inbox=\box93
-\enit@count@id=\count374
-\enitdp@description=\count375
+\enit@toks=\toks47
+\enit@inbox=\box94
+\enit@count@id=\count375
+\enitdp@description=\count376
 ) (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count376
-\l__lipsum_a_int=\count377
-\l__lipsum_b_int=\count378
+\g__lipsum_par_int=\count377
+\l__lipsum_a_int=\count378
+\l__lipsum_b_int=\count379
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.te
 x))
@@ -1424,10 +1433,10 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 x
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.t
 ex
-\XKV@toks=\toks47
-\XKV@tempa@toks=\toks48
+\XKV@toks=\toks48
+\XKV@tempa@toks=\toks49
 )
-\XKV@depth=\count379
+\XKV@depth=\count380
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.st
@@ -1442,7 +1451,7 @@ Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbo
 x.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
-\collectedbox=\box94
+\collectedbox=\box95
 )
 \tc@llx=\dimen309
 \tc@lly=\dimen310
@@ -1466,13 +1475,13 @@ File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.
 sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count380
+\c@checkoddpage=\count381
 )
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.st
 y
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box95
-\sift@deathcycles=\count381
+\@vwid@box=\box96
+\sift@deathcycles=\count382
 \@vwid@loff=\dimen321
 \@vwid@roff=\dimen322
 )
@@ -1480,27 +1489,27 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 134.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 135.
 
 Package fontspec Info: 
 (fontspec)             Font family 'latinmodern-math.otf(0)' created for font
@@ -1539,16 +1548,16 @@ dflt;"<7.8-11.05>"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"
 "
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 134.
+(Font)              `operators' in the math version `normal' on input line 135.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
- line 134.
+ line 135.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 134.
+(Font)              `operators' in the math version `bold' on input line 135.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
-t line 134.
+t line 135.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.0001.
@@ -1601,15 +1610,15 @@ uage=dflt;+ssty=1;"
 uage=dflt;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 134.
+(Font)              `symbols' in the math version `normal' on input line 135.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
-t line 134.
+t line 135.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 134.
+(Font)              `symbols' in the math version `bold' on input line 135.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
-t line 134.
+t line 135.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999.
@@ -1657,16 +1666,16 @@ uage=dflt;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 1
-34.
+35.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
-t line 134.
+t line 135.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 134
+(Font)              `largesymbols' in the math version `bold' on input line 135
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
-t line 134.
+t line 135.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1711,29 +1720,30 @@ Package caption Info: longtable package is loaded.
 y
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
+Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count382
-Package hyperref Info: Link coloring ON on input line 134.
+\c@lstlisting=\count383
+Package hyperref Info: Link coloring ON on input line 135.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 File: DUT-ITF-Logo.jpg Graphic file (type bmp)
 <DUT-ITF-Logo.jpg>
-LaTeX Font Info:    Calculating math sizes for size <15.59996> on input line 16
-9.
+LaTeX Font Info:    Calculating math sizes for size <15.59996> on input line 17
+0.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 15.60162pt on input line 169.
+(Font)              scaled to size 15.60162pt on input line 170.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.92108pt on input line 169.
+(Font)              scaled to size 10.92108pt on input line 170.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.8008pt on input line 169.
+(Font)              scaled to size 7.8008pt on input line 170.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 15.59828pt on input line 169.
+(Font)              scaled to size 15.59828pt on input line 170.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.91875pt on input line 169.
+(Font)              scaled to size 10.91875pt on input line 170.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.79913pt on input line 169.
+(Font)              scaled to size 7.79913pt on input line 170.
 
 
 [1
@@ -1957,25 +1967,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
 [13] (codebaocao/Serial1.tex)
-Overfull \hbox (5.84416pt too wide) in paragraph at lines 186--187
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.2645pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.2645pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
+
+[14]
+Overfull \hbox (5.84416pt too wide) in paragraph at lines 193--194
 []\TU/TimesNewRoman(0)/m/n/13 Khởi tạo một Bảng băm (Hash Map) sử dụng cấu trúc
  \TU/Consolas(0)/m/n/13 std::unordered_map<int,
  []
 
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.2645pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.2645pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
-
-[14]) (ReportParts/program-results.tex (tikz/ProArch.tex
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)
+) (ReportParts/program-results.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1984,7 +1990,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[15]
+[15] (tikz/ProArch.tex) (tikz/FuncMap.tex)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1993,7 +1999,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[16]) (ReportParts/Conclusions.tex
+[16]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2002,7 +2008,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[17]) (References.tex
+[17]) (ReportParts/Conclusions.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2011,7 +2017,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[18]
+[18]) (References.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.2645pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.2645pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
+
+[19]
 Underfull \hbox (badness 6927) in paragraph at lines 14--15
 []\TU/TimesNewRoman(0)/m/n/13 chahelgupta. (n.d.). \TU/TimesNewRoman(0)/m/it/13
  DSA-Project-FamilyTree: C++ program for building
@@ -2083,7 +2098,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[19] (main.aux)
+[20] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
@@ -2092,12 +2107,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 53F86DCF0E2C56624E265F65B3B5F4EF;6157.
  ) 
 Here is how much of TeX's memory you used:
- 37388 strings out of 403250
- 744367 string characters out of 5460267
- 1622722 words of memory out of 5000000
- 65185 multiletter control sequences out of 15000+600000
- 634561 words of font info for 161 fonts, out of 8000000 for 9000
+ 37588 strings out of 403250
+ 747710 string characters out of 5460267
+ 1623974 words of memory out of 5000000
+ 65378 multiletter control sequences out of 15000+600000
+ 634569 words of font info for 162 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 108i,14n,128p,1195b,1491s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,14n,128p,1195b,1489s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (23 pages).
+Output written on main.pdf (24 pages).

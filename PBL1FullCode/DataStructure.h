@@ -5,6 +5,15 @@
 #include <string>
 #include <vector>
 
+#define RESET   "\033[0m"
+#define BOLD    "\033[1m"
+#define RED     "\033[31m"      
+#define GREEN   "\033[32m"      
+#define DUT_BLUE  "\033[1;34m"
+#define ORANGE  "\033[38;5;208m"
+#define CYAN    "\033[36m"
+#define HIGHLIGHT "\033[1;37;44m"
+
 using namespace std;
 
 // ======================================================================
@@ -26,6 +35,12 @@ struct Person {
 
     Person(string _name, string _gender, Person* _parent = nullptr);
 };
+
+struct SearchResult {
+    Person* node;    // Con trỏ tới nút tìm thấy (hoặc nút chồng nếu là vợ)
+    bool isSpouse;   // true nếu tên khớp với spouseName, false nếu khớp với name
+};
+
 
 // ======================================================================
 // 2. CẤU TRÚC BẢN GHI TĨNH (Dùng để lưu/đọc file nhị phân .dat)
