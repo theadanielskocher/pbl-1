@@ -1,0 +1,39 @@
+\begin{figure}[H]
+	\vspace*{-\baselineskip}
+	\centering
+	\begin{minipage}{0.50\textwidth}
+		\begin{algorithm}[H]
+			\footnotesize
+			\caption*{Pha 1: Cấp phát nút}
+			\begin{algorithmic}
+				\State Khởi tạo bảng băm: HashMap<int, Person*>
+				\For {mỗi Record trong fileRecords}
+				\State pNew = New Person(Record.name, Record.gender)
+				\State Sao chép thông tin từ Record sang pNew
+				\State HashMap[Record.id] = pNew
+				\EndFor
+			\end{algorithmic}
+		\end{algorithm}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}{0.50\textwidth}
+		\begin{algorithm}[H]
+			\footnotesize
+			\caption*{Pha 2: Thiết lập liên kết}
+			\begin{algorithmic}
+				\For {mỗi Record trong fileRecords}
+				\State currentPerson = HashMap[Record.id]
+				\If {Record.parentId != 0}
+				\State Tra cứu địa chỉ Cha từ Bảng băm
+				\State Thực hiện nối nút
+				\EndIf
+				\EndFor
+				
+				\State Cập nhật global\_id\_counter = Max(Record.id) + 1
+				\State Trả về địa chỉ Gốc (Root)
+			\end{algorithmic}
+		\end{algorithm}
+		
+	\end{minipage}      
+	\caption{Mã giả quy trình thực hiện truy vấn theo Định danh bằng cấu trúc Bảng băm}
+\end{figure}

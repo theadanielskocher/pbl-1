@@ -1,4 +1,4 @@
-#include "TreeManager.h"  // 1. Luôn include file .h của chính nó
+#include "TreeManager.h"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -14,16 +14,14 @@ using namespace std;
 Person* root = nullptr;
 int global_id_counter = 1;
 
-// Trong TreeManager.cpp
-#include "TreeManager.h"
 
-// Định nghĩa hàm khởi tạo của struct Person
-Person::Person(string _name, string _gender, Person* _parent) {
+Person::Person(string _name, string _gender, int _birthYear, string _birthday, Person* _parent) {
     id = global_id_counter++;
     name = _name;
     gender = _gender;
+    birthYear = _birthYear;
+    birthday = _birthday;
     parent = _parent;
-    birthday = "Unknown";
     job = "Unknown";
     deathDay = "N/A";
     spouseName = "None";
@@ -33,25 +31,56 @@ Person::Person(string _name, string _gender, Person* _parent) {
 }
 
 
-Person* CreateFamily(string name, string gender) {
+Person* CreateFamily(string name, string gender, string bday, int birthYear) {
     if (root != nullptr) return root;
-    root = new Person(name, gender);
+    root = new Person(name, gender, birthYear, bday, nullptr);
     return root;
 }
 
-Person* AddChild(Person* parent, string name, string gender) {
+Person* AddChild(Person* parent, string name, string bday, string gender) {
     if (parent == nullptr || parent->gender == "Nu") return nullptr;
-    Person* child = new Person(name, gender, parent);
+
+    int nSinh = Person::extractYear(bday);
+    
+    Person* newMember = new Person(name, gender, nSinh, bday, parent); 
+
+    if (parent->firstChild == nullptr) {
+        parent->firstChild = newMember;
+    } 
+    else if (newMember->birthYear < parent->firstChild->birthYear) {
+        newMember->nextSibling = parent->firstChild;
+        parent->firstChild = newMember;
+    } 
+    else {
+        Person* curr = parent->firstChild;
+        while (curr->nextSibling != nullptr && curr->nextSibling->birthYear <= newMember->birthYear) {
+            curr = curr->nextSibling;
+        }
+        newMember->nextSibling = curr->nextSibling;
+        curr->nextSibling = newMember;
+    }
+    return newMember;
+}
+
+void LinkChildSorted(Person* parent, Person* child) {
+    if (parent == nullptr || child == nullptr) return;
+    child->parent = parent;
+
     if (parent->firstChild == nullptr) {
         parent->firstChild = child;
-    } else {
-        Person* current = parent->firstChild;
-        while (current->nextSibling != nullptr) {
-            current = current->nextSibling;
+    } 
+    else if (child->birthYear < parent->firstChild->birthYear) {
+        child->nextSibling = parent->firstChild;
+        parent->firstChild = child;
+    } 
+    else {
+        Person* curr = parent->firstChild;
+        while (curr->nextSibling != nullptr && curr->nextSibling->birthYear <= child->birthYear) {
+            curr = curr->nextSibling;
         }
-        current->nextSibling = child;
+        child->nextSibling = curr->nextSibling;
+        curr->nextSibling = child;
     }
-    return child;
 }
 
 void DisplayTree(Person* current, int level) {
@@ -69,14 +98,12 @@ void ShowDetail(SearchResult res) {
     cout << "\n" << DUT_BLUE << "========== THONG TIN CHI TIET ==========" << RESET << endl;
 
     if (res.isSpouse) {
-        // TRƯỜNG HỢP 1: Đang xem thông tin Bà/Mẹ (Spouse)
         cout << BOLD << "Ho va ten: " << RESET << GREEN << p->spouseName << RESET << " (Phu nhan)" << endl;
         cout << BOLD << "Gioi tinh: " << RESET << "Nu" << endl;
         cout << BOLD << "Phu quan:  " << RESET << p->name << " (ID: " << p->id << ")" << endl;
         cout << BOLD << "Gia dinh:  " << RESET << "Nhanh cua " << (p->parent ? p->parent->name : "Ong To") << endl;
     } 
     else {
-        // TRƯỜNG HỢP 2: Đang xem thông tin Nút chính quy (Nam/Con cái)
         cout << BOLD << "Ho va ten: " << RESET << GREEN << p->name << RESET << endl;
         cout << BOLD << "ID:        " << RESET << p->id << endl;
         cout << BOLD << "Gioi tinh: " << RESET << p->gender << endl;
@@ -94,20 +121,43 @@ void ShowDetail(SearchResult res) {
     }
     cout << DUT_BLUE << "========================================" << RESET << endl;
 }
+
 void UpdatePersonInfo(Person* p) {
     if (p == nullptr) return;
 
+    string temp;
+
     cout << "\n--- Cap nhat thong tin cho: [" << p->id << "] " << p->name << " ---\n";
-    cout << "Nhap ngay sinh: "; getline(cin, p->birthday);
-    cout << "Nhap nghe nghiep: "; getline(cin, p->job);
-    cout << "Nhap ngay mat (N/A neu con song): "; getline(cin, p->deathDay);
-    cout << "Nhap ten vo/chong: "; getline(cin, p->spouseName);
+    cout << "(Nhan Enter neu muon giu nguyen thong tin cu)\n";
+
+    cout << "Ngay sinh hien tai [" << p->birthday << "]: ";
+    getline(cin, temp);
+    if (!temp.empty()) {
+        p->birthday = temp;
+        p->birthYear = Person::extractYear(temp); 
+    }
+
+    cout << "Nghe nghiep hien tai [" << p->job << "]: ";
+    getline(cin, temp);
+    if (!temp.empty()) p->job = temp;
+
+    cout << "Ngay mat hien tai [" << p->deathDay << "]: ";
+    getline(cin, temp);
+    if (!temp.empty()) p->deathDay = temp;
+
+    cout << "Ten vo/chong hien tai [" << p->spouseName << "]: ";
+    getline(cin, temp);
+    if (!temp.empty()) p->spouseName = temp;
 
     if (p->gender == "Nu") {
-        cout << "Nhap so con: "; cin >> p->numChildren;
-        cin.ignore(256, '\n');
+        cout << "So con hien tai [" << p->numChildren << "]: ";
+        getline(cin, temp);
+        if (!temp.empty()) {
+            p->numChildren = stoi(temp);
+        }
     }
-    cout << "Cap nhat thanh cong!\n";
+
+    cout << "\n[OK] Cap nhat thanh cong!\n";
 }
 
 void FreeTree(Person* current) {

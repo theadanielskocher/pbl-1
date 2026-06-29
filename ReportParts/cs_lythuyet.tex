@@ -30,14 +30,14 @@ Trong mô hình này, mỗi nút trong cây chỉ cần hai liên kết chính:
 
 Ngoài ra, mỗi nút còn lưu con trỏ parent trỏ tới nút cha, giúp việc truy vấn quan hệ cha - con và di chuyển ngược trong cây trở nên thuận tiện.
 
+\input{tikz/tikz1}
+
 Với cách biểu diễn này:
 \begin{itemize}
 	\item Nếu một nút không có con, con trỏ \texttt{firstChild} có giá trị \texttt{nullptr}.
 	\item Nếu một nút là người con cuối cùng, con trỏ \texttt{nextSibling} có giá trị \texttt{nullptr}.
 	\item Các con của cùng một nút cha được liên kết thành một danh sách liên kết đơn thông qua \texttt{nextSibling}.
 \end{itemize}
-
-\input{tikz/tikz1}
 
 Trong chương trình, mỗi thành viên trong gia phả được biểu diễn bởi một cấu trúc \texttt{Person}, trong đó các mối quan hệ được quản lý hoàn toàn bằng con trỏ. Việc thêm một người con mới được thực hiện bằng cách:
 \begin{itemize}

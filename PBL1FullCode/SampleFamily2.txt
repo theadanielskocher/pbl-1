@@ -1,0 +1,24 @@
+None, Nguyen Van A, Nam, 01/01/1940
+Nguyen Van A, Nguyen Van B, Nam, 12/03/1965
+Nguyen Van A, Nguyen Thi C, Nu, 25/07/1968
+Nguyen Van A, Nguyen Van D, Nam, 09/11/1970
+Nguyen Van B, Nguyen Van E, Nam, 15/02/1990
+Nguyen Van B, Nguyen Thi F, Nu, 20/06/1993
+Nguyen Van B, Nguyen Van G, Nam, 05/09/1995
+Nguyen Van D, Nguyen Van H, Nam, 11/12/1992
+Nguyen Van D, Nguyen Thi I, Nu, 30/04/1996
+Nguyen Van E, Nguyen Van K, Nam, 17/08/1998
+Nguyen Van E, Nguyen Thi L, Nu, 22/10/2000
+Nguyen Van G, Nguyen Van M, Nam, 01/01/2001
+Nguyen Van G, Nguyen Thi N, Nu, 14/03/2003
+Nguyen Van H, Nguyen Van O, Nam, 09/09/2018
+Nguyen Van H, Nguyen Thi P, Nu, 21/11/2020
+Nguyen Van K, Nguyen Van Q, Nam, 05/05/2021
+Nguyen Van K, Nguyen Thi R, Nu, 12/12/2022
+Nguyen Van M, Nguyen Van S, Nam, 08/08/2023
+Nguyen Van M, Nguyen Thi T, Nu, 18/06/2024
+Nguyen Van O, Nguyen Van U, Nam, 10/10/2040
+Nguyen Van Q, Nguyen Van V, Nam, 25/12/2042
+Nguyen Van Q, Nguyen Van A, Nam, 10/10/2045
+Nguyen Van Q, Nguyen Van Y, Nam, 10/12/2047
+Nguyen Van A, Nguyen Van Z, Nam, 10/12/2050

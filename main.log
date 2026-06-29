@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2026.2.27)  27 MAR 2026 22:07
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2026.4.25)  26 MAY 2026 08:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -585,6 +585,177 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/Consolas(1)/b/n on input line 10.
 
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Cambria Math/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'CambriaMath(0)' created for font 'Cambria
+(fontspec)             Math' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Cambria
+(fontspec)             Math/OT:script=math;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Cambria Math/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'CambriaMath(1)' created for font 'Cambria
+(fontspec)             Math' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=8.65-},{Size=6.65-8.65,Font=Cambria
+(fontspec)             Math,Style=MathScript},{Size=-6.65,Font=Cambria
+(fontspec)             Math,Style=MathScriptScript}}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <8.65->"Cambria
+(fontspec)             Math/OT:script=math;language=dflt;"<6.65-8.65>"Cambria
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-6.65>"Cambr
+ia
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
+
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 11.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/CambriaMath(1)/m/n on input line 11.
+
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 11.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/CambriaMath(1)/b/n on input line 11
+.
+
+Package fontspec Info: 
+(fontspec)             Cambria Math scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Cambria Math/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Cambria Math scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             Cambria Math scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             Cambria Math scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'CambriaMath(2)' created for font 'Cambria
+(fontspec)             Math' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=8.65-},{Size=6.65-8.65,Font=Cambria
+(fontspec)             Math,Style=MathScript},{Size=-6.65,Font=Cambria
+(fontspec)             Math,Style=MathScriptScript}},ScaleAgain=1.0001,FontAdju
+stment={\fontdimen
+(fontspec)             8\font =7.56836pt\relax \fontdimen 9\font
+(fontspec)             =5.85938pt\relax \fontdimen 10\font =4.58984pt\relax
+(fontspec)             \fontdimen 11\font =6.68945pt\relax \fontdimen 12\font
+(fontspec)             =5.0293pt\relax \fontdimen 13\font =3.66211pt\relax
+(fontspec)             \fontdimen 14\font =3.66211pt\relax \fontdimen 15\font
+(fontspec)             =3.00293pt\relax \fontdimen 16\font =2.04102pt\relax
+(fontspec)             \fontdimen 17\font =2.04102pt\relax \fontdimen 18\font
+(fontspec)             =2.2461pt\relax \fontdimen 19\font =1.5625pt\relax
+(fontspec)             \fontdimen 22\font =2.85645pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.65->s*[1.0001]"Cambria
+(fontspec)             Math/OT:script=math;language=dflt;"<6.65-8.65>s*[1.0001]
+"Cambria
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-6.65>s*[1.0
+001]"Cambria
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 11.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> TU/CambriaMath(2)/m/n on input line 11
+.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 11.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> TU/CambriaMath(2)/b/n on input line 11
+.
+
+Package fontspec Info: 
+(fontspec)             Cambria Math scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Cambria Math/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Cambria Math scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             Cambria Math scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             Cambria Math scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'CambriaMath(3)' created for font 'Cambria
+(fontspec)             Math' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=8.65-},{Size=6.65-8.65,Font=Cambria
+(fontspec)             Math,Style=MathScript},{Size=-6.65,Font=Cambria
+(fontspec)             Math,Style=MathScriptScript}},ScaleAgain=0.9999,FontAdju
+stment={\fontdimen
+(fontspec)             8\font =0.64941pt\relax \fontdimen 9\font
+(fontspec)             =0.64941pt\relax \fontdimen 10\font =0.64941pt\relax
+(fontspec)             \fontdimen 11\font =2.4414pt\relax \fontdimen 12\font
+(fontspec)             =6.05469pt\relax \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.65->s*[0.9999]"Cambria
+(fontspec)             Math/OT:script=math;language=dflt;"<6.65-8.65>s*[0.9999]
+"Cambria
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-6.65>s*[0.9
+999]"Cambria
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 1
+1.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> TU/CambriaMath(3)/m/n on input line 11
+.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 11.
+
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/CambriaMath(3)/b/n on input line 11
+.
+
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.st
 y
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -1111,13 +1282,60 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box70
 \rot@mess@toks=\toks39
 )
+(C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.s
+ty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count337
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count338
+) (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/mwe\mwe.sty
+Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
+
+(C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count339
+\l__lipsum_a_int=\count340
+\l__lipsum_b_int=\count341
+
+(C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.te
+x))
+(C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.
+sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count342
+\c@Blindtext=\count343
+\c@blind@countparstart=\count344
+\blind@countxx=\count345
+\blindtext@numBlindtext=\count346
+\blind@countyy=\count347
+\c@blindlist=\count348
+\c@blindlistlevel=\count349
+\c@blindlist@level=\count350
+\blind@listitem=\count351
+\c@blind@listcount=\count352
+\c@blind@levelcount=\count353
+\blind@mathformula=\count354
+\blind@Mathformula=\count355
+\c@blind@randomcount=\count356
+\c@blind@randommax=\count357
+\c@blind@pangramcount=\count358
+\c@blind@pangrammax=\count359
+))
+(C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxma
+cro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm
 .sty
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 \@float@every@algorithm=\toks40
-\c@algorithm=\count337
+\c@algorithm=\count360
 )
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algpseu
 docode.sty
@@ -1128,32 +1346,32 @@ hmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count338
-\c@ALG@rem=\count339
-\c@ALG@nested=\count340
+\c@ALG@line=\count361
+\c@ALG@rem=\count362
+\c@ALG@nested=\count363
 \ALG@tlm=\skip70
 \ALG@thistlm=\skip71
-\c@ALG@Lnr=\count341
-\c@ALG@blocknr=\count342
-\c@ALG@storecount=\count343
-\c@ALG@tmpcounter=\count344
+\c@ALG@Lnr=\count364
+\c@ALG@blocknr=\count365
+\c@ALG@storecount=\count366
+\c@ALG@tmpcounter=\count367
 \ALG@tmplength=\skip72
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.st
 y
-\lst@mode=\count345
+\lst@mode=\count368
 \lst@gtempboxa=\box71
 \lst@token=\toks41
-\lst@length=\count346
+\lst@length=\count369
 \lst@currlwidth=\dimen291
-\lst@column=\count347
-\lst@pos=\count348
+\lst@column=\count370
+\lst@pos=\count371
 \lst@lostspace=\dimen292
 \lst@width=\dimen293
-\lst@newlines=\count349
-\lst@lineno=\count350
+\lst@newlines=\count372
+\lst@lineno=\count373
 \lst@maxwidth=\dimen294
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.st
@@ -1162,8 +1380,8 @@ File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 )
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count351
-\lst@skipnumbers=\count352
+\c@lstnumber=\count374
+\lst@skipnumbers=\count375
 \lst@framebox=\box72
 )
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cf
@@ -1172,6 +1390,17 @@ File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
 
+(C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.st
+y
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+(C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.st
+y
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+(C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+)
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.
 sty
 Package: tcolorbox 2025/07/08 version 6.7.1 text color boxes
@@ -1192,15 +1421,15 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.st
 y
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count353
+\etb@tempcnta=\count376
 )
 \tcb@titlebox=\box73
 \tcb@upperbox=\box74
 \tcb@lowerbox=\box75
 \tcb@phantombox=\box76
-\c@tcbbreakpart=\count354
-\c@tcblayer=\count355
-\c@tcolorbox@number=\count356
+\c@tcbbreakpart=\count377
+\c@tcblayer=\count378
+\c@tcolorbox@number=\count379
 \l__tcobox_tmpa_box=\box77
 \l__tcobox_tmpa_dim=\dimen295
 \tcb@temp=\box78
@@ -1235,17 +1464,17 @@ Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \LTright=\skip74
 \LTpre=\skip75
 \LTpost=\skip76
-\LTchunksize=\count357
+\LTchunksize=\count380
 \LTcapwidth=\dimen296
 \LT@head=\box85
 \LT@firsthead=\box86
 \LT@foot=\box87
 \LT@lastfoot=\box88
 \LT@gbox=\box89
-\LT@cols=\count358
-\LT@rows=\count359
-\c@LT@tables=\count360
-\c@LT@chunks=\count361
+\LT@cols=\count381
+\LT@rows=\count382
+\c@LT@tables=\count383
+\c@LT@chunks=\count384
 \LT@p@ftn=\toks44
 ) (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
@@ -1299,7 +1528,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count362
+\c@section@level=\count385
 )
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringen
 c.sty
@@ -1307,8 +1536,8 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen299
-\Hy@linkcounter=\count363
-\Hy@pagecounter=\count364
+\Hy@linkcounter=\count386
+\Hy@pagecounter=\count387
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
@@ -1317,7 +1546,7 @@ File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 y
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count365
+\Hy@SavedSpaceFactor=\count388
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
@@ -1329,7 +1558,7 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count366
+\c@Hy@tempcnt=\count389
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip19
@@ -1346,7 +1575,7 @@ alc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count367
+\Fld@menulength=\count390
 \Field@Width=\dimen301
 \Fld@charsize=\dimen302
 Package hyperref Info: Hyper figures OFF on input line 6078.
@@ -1356,19 +1585,19 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count368
-\c@Item=\count369
-\c@Hfootnote=\count370
+\Hy@abspage=\count391
+\c@Item=\count392
+\c@Hfootnote=\count393
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex.def
 File: hxetex.def 2025-07-12 v7.01o Hyperref driver for XeTeX
 \pdfm@box=\box92
-\c@Hy@AnnotLevel=\count371
-\HyField@AnnotCount=\count372
-\Fld@listcount=\count373
-\c@bookmark@seq@number=\count374
+\c@Hy@AnnotLevel=\count394
+\HyField@AnnotCount=\count395
+\Fld@listcount=\count396
+\c@bookmark@seq@number=\count397
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerun
 filecheck.sty
@@ -1383,7 +1612,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip79
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 100.
+Package hyperref Info: Option `colorlinks' set `true' on input line 120.
 
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.st
 y
@@ -1412,16 +1641,9 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@outerparindent=\dimen308
 \enit@toks=\toks47
 \enit@inbox=\box94
-\enit@count@id=\count375
-\enitdp@description=\count376
-) (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
-Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count377
-\l__lipsum_a_int=\count378
-\l__lipsum_b_int=\count379
-
-(C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.te
-x))
+\enit@count@id=\count398
+\enitdp@description=\count399
+)
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.
 sty
 Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
@@ -1436,7 +1658,7 @@ ex
 \XKV@toks=\toks48
 \XKV@tempa@toks=\toks49
 )
-\XKV@depth=\count380
+\XKV@depth=\count400
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.st
@@ -1475,13 +1697,13 @@ File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.
 sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count381
+\c@checkoddpage=\count401
 )
 (C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.st
 y
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box96
-\sift@deathcycles=\count382
+\sift@deathcycles=\count402
 \@vwid@loff=\dimen321
 \@vwid@roff=\dimen322
 )
@@ -1489,193 +1711,26 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 135.
-
-Package fontspec Info: 
-(fontspec)             Font family 'latinmodern-math.otf(0)' created for font
-(fontspec)             'latinmodern-math.otf' with options
-(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
-=Math,BoldFont={latinmodern-math.otf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[latinmodern-math.otf]/OT:script=math;language=dflt;
-"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"[latinmodern-math.otf]/OT:script=math;language=dflt;
-"
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'latinmodern-math.otf(1)' created for font
-(fontspec)             'latinmodern-math.otf' with options
-(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
-=Math,SizeFeatures={{Size=11.05-},{Size=7.8-11.05,Font=latinmodern-math.otf,Sty
-le=MathScript},{Size=-7.8,Font=latinmodern-math.otf,Style=MathScriptScript}},Bo
-ldFont={latinmodern-math.otf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <11.05->"[latinmodern-math.otf]/OT:script=math;language=
-dflt;"<7.8-11.05>"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"
-<-7.8>"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"[latinmodern-math.otf]/OT:script=math;language=dflt;
-"
-
-LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 135.
-
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
- line 135.
-LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 135.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
-t line 135.
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.0001.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.0001.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.0001.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.0001.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.0001.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'latinmodern-math.otf(2)' created for font
-(fontspec)             'latinmodern-math.otf' with options
-(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
-=Math,SizeFeatures={{Size=11.05-},{Size=7.8-11.05,Font=latinmodern-math.otf,Sty
-le=MathScript},{Size=-7.8,Font=latinmodern-math.otf,Style=MathScriptScript}},Bo
-ldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\fontdimen
-(fontspec)             8\font =8.801pt\relax \fontdimen 9\font =5.122pt\relax
-(fontspec)             \fontdimen 10\font =5.772pt\relax \fontdimen 11\font
-(fontspec)             =8.918pt\relax \fontdimen 12\font =4.485pt\relax
-(fontspec)             \fontdimen 13\font =4.719pt\relax \fontdimen 14\font
-(fontspec)             =4.719pt\relax \fontdimen 15\font =3.757pt\relax
-(fontspec)             \fontdimen 16\font =3.211pt\relax \fontdimen 17\font
-(fontspec)             =3.211pt\relax \fontdimen 18\font =3.25pt\relax
-(fontspec)             \fontdimen 19\font =2.6pt\relax \fontdimen 22\font
-(fontspec)             =3.25pt\relax \fontdimen 20\font =0pt\relax \fontdimen
-(fontspec)             21\font =0pt\relax }].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <11.05->s*[1.0001]"[latinmodern-math.otf]/OT:script=math
-;language=dflt;"<7.8-11.05>s*[1.0001]"[latinmodern-math.otf]/OT:script=math;lan
-guage=dflt;+ssty=0;"<-7.8>s*[1.0001]"[latinmodern-math.otf]/OT:script=math;lang
-uage=dflt;+ssty=1;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1.0001]"[latinmodern-math.otf]/OT:script=math;lang
-uage=dflt;"
-
-LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 135.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
-t line 135.
-LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 135.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
-t line 135.
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'latinmodern-math.otf(3)' created for font
-(fontspec)             'latinmodern-math.otf' with options
-(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
-=Math,SizeFeatures={{Size=11.05-},{Size=7.8-11.05,Font=latinmodern-math.otf,Sty
-le=MathScript},{Size=-7.8,Font=latinmodern-math.otf,Style=MathScriptScript}},Bo
-ldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\fontdimen
-(fontspec)             8\font =0.52pt\relax \fontdimen 9\font =2.6pt\relax
-(fontspec)             \fontdimen 10\font =2.171pt\relax \fontdimen 11\font
-(fontspec)             =1.443pt\relax \fontdimen 12\font =7.8pt\relax
-(fontspec)             \fontdimen 13\font =0pt\relax }].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <11.05->s*[0.9999]"[latinmodern-math.otf]/OT:script=math
-;language=dflt;"<7.8-11.05>s*[0.9999]"[latinmodern-math.otf]/OT:script=math;lan
-guage=dflt;+ssty=0;"<-7.8>s*[0.9999]"[latinmodern-math.otf]/OT:script=math;lang
-uage=dflt;+ssty=1;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9999]"[latinmodern-math.otf]/OT:script=math;lang
-uage=dflt;"
-
-LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 1
-35.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
-t line 135.
-LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 135
-.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
-t line 135.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1722,45 +1777,46 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count383
-Package hyperref Info: Link coloring ON on input line 135.
+\c@lstlisting=\count403
+Package hyperref Info: Link coloring ON on input line 157.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 File: DUT-ITF-Logo.jpg Graphic file (type bmp)
 <DUT-ITF-Logo.jpg>
-LaTeX Font Info:    Calculating math sizes for size <15.59996> on input line 17
-0.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 15.60162pt on input line 170.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.92108pt on input line 170.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.8008pt on input line 170.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 15.59828pt on input line 170.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.91875pt on input line 170.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.79913pt on input line 170.
+LaTeX Font Info:    Calculating math sizes for size <15.59996> on input line 19
+7.
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
+(Font)              scaled to size 15.60162pt on input line 197.
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
+(Font)              scaled to size 10.92108pt on input line 197.
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
+(Font)              scaled to size 7.8008pt on input line 197.
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
+(Font)              scaled to size 15.59828pt on input line 197.
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
+(Font)              scaled to size 10.91875pt on input line 197.
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
+(Font)              scaled to size 7.79913pt on input line 197.
 
 
 [1
 
 ] (main.toc
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 13.00139pt on input line 5.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.10097pt on input line 5.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.50069pt on input line 5.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 12.99861pt on input line 5.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.09903pt on input line 5.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.4993pt on input line 5.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 4.
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
+(Font)              scaled to size 13.00139pt on input line 4.
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
+(Font)              scaled to size 9.10092pt on input line 4.
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
+(Font)              scaled to size 6.50069pt on input line 4.
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
+(Font)              scaled to size 12.99861pt on input line 4.
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
+(Font)              scaled to size 9.09898pt on input line 4.
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
+(Font)              scaled to size 6.4993pt on input line 4.
 
 
 [2
@@ -1786,7 +1842,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4] (Phuluc/tongquan.tex)
 
-[1] (ReportParts/Tongquandetai.tex) (ReportParts/ytuong.tex
+[5] (ReportParts/Tongquandetai.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.2645pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.2645pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
+
+[1]) (ReportParts/ytuong.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1804,23 +1869,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[3] (tikz/tikz1.tex) (codebaocao/code1.tex
+[3] (tikz/tikz1.tex)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.2645pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.2645pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
+
+[4] (codebaocao/code1.tex
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 6.
 LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 8.
 
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
 (Font)              scaled to size 10.83461pt on input line 8.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
 (Font)              scaled to size 7.5842pt on input line 8.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
 (Font)              scaled to size 5.4173pt on input line 8.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
 (Font)              scaled to size 10.8323pt on input line 8.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
 (Font)              scaled to size 7.58257pt on input line 8.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
 (Font)              scaled to size 5.41615pt on input line 8.
+
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
 )
 
 
@@ -1830,31 +1911,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[4] (codebaocao/code2.tex
-(C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.st
-y
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-)
-(C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.st
-y
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-)
-(C:\Users\Hai Dang\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-))
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.2645pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.2645pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
-
-[5] (ReportParts/dsa.tex
+[5] (codebaocao/code2.tex
+File: codebaocao/DisandFree.png Graphic file (type bmp)
+<codebaocao/DisandFree.png>
+)) (ReportParts/dsa.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1866,17 +1926,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [6] (tikz/tik2.tex
 LaTeX Font Info:    Calculating math sizes for size <11.86258> on input line 30
 .
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
 (Font)              scaled to size 11.86385pt on input line 30.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
 (Font)              scaled to size 8.30464pt on input line 30.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
 (Font)              scaled to size 5.93192pt on input line 30.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
 (Font)              scaled to size 11.8613pt on input line 30.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
 (Font)              scaled to size 8.30286pt on input line 30.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
 (Font)              scaled to size 5.93065pt on input line 30.
 )
 
@@ -1887,7 +1947,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[7] (tikz/HashTable1.tex)
+[7] (tikz/HashTable1.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1896,50 +1956,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[8]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.2645pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.2645pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
-
-[9] (tikz/LCAPhase01.tex) (tikz/LCAPhase2.tex)
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.2645pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.2645pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
-
-[10]
-Overfull \hbox (5.54716pt too wide) in alignment at lines 102--105
- [] [] [] [] 
+[8]) (codebaocao/Hash1.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+[] \TU/TimesNewRoman(0)/m/n/10.83347 pNew = New Person(Record.name,
  []
 
-
-Overfull \hbox (5.54716pt too wide) in alignment at lines 105--109
- [] [] [] [] 
- []
-
-
-Overfull \hbox (5.54716pt too wide) in alignment at lines 109--112
- [] [] [] [] 
- []
-
-
-Overfull \hbox (5.54716pt too wide) in alignment at lines 112--113
- [] [] [] [] 
- []
-
-
-Overfull \hbox (5.54716pt too wide) in alignment at lines 113--122
- [] [] [] [] 
- []
-
-
+)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1948,7 +1970,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[11] (codebaocao/LCA21.tex) (codebaocao/LCA22.tex)
+[9] (tikz/LCAPhase01.tex)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1957,7 +1979,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[12]
+[10] (tikz/LCAPhase2.tex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.2645pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.2645pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
+
+[11] (codebaocao/LCA21.tex
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1966,7 +1999,50 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[13] (codebaocao/Serial1.tex)
+[12] (codebaocao/LCA22.tex
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.2645pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.2645pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
+
+[13] (codebaocao/Serial1.tex
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+Missing character: There is no ▷ in font Cambria Math/OT:script=math;language=d
+flt;!
+)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1976,21 +2052,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
 [14]
-Overfull \hbox (5.84416pt too wide) in paragraph at lines 193--194
+Overfull \hbox (16.97928pt too wide) in paragraph at lines 207--208
 []\TU/TimesNewRoman(0)/m/n/13 Khởi tạo một Bảng băm (Hash Map) sử dụng cấu trúc
  \TU/Consolas(0)/m/n/13 std::unordered_map<int,
  []
 
-) (ReportParts/program-results.tex
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.2645pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.2645pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
-
-[15] (tikz/ProArch.tex) (tikz/FuncMap.tex)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1999,7 +2066,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[16]
+[15]) (ReportParts/program-results.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2008,7 +2075,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[17]) (ReportParts/Conclusions.tex
+[16] (tikz/ProArch.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2017,7 +2088,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[18]) (References.tex
+[17]
+File: Results/Main.png Graphic file (type bmp)
+<Results/Main.png>
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2026,7 +2100,93 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[19]
+[18]
+File: Results/ShowFamily.png Graphic file (type bmp)
+<Results/ShowFamily.png>
+
+Overfull \hbox (9.53546pt too wide) in paragraph at lines 56--57
+ [][] 
+ []
+
+File: Results/Search.png Graphic file (type bmp)
+<Results/Search.png>
+
+Overfull \hbox (9.53546pt too wide) in paragraph at lines 62--63
+ [][] 
+ []
+
+File: Results/Relationship1.png Graphic file (type bmp)
+<Results/Relationship1.png>
+
+Overfull \hbox (9.53546pt too wide) in paragraph at lines 72--73
+ [][] 
+ []
+
+File: Results/Relationship2.png Graphic file (type bmp)
+<Results/Relationship2.png>
+
+Overfull \hbox (9.53546pt too wide) in paragraph at lines 78--79
+ [][] 
+ []
+
+File: Results/Update.png Graphic file (type bmp)
+<Results/Update.png>
+
+Overfull \hbox (9.53546pt too wide) in paragraph at lines 84--85
+ [][] 
+ []
+
+File: Results/Statistics.png Graphic file (type bmp)
+<Results/Statistics.png>
+
+Overfull \hbox (9.53546pt too wide) in paragraph at lines 90--91
+ [][] 
+ []
+
+File: Results/InputFiles.png Graphic file (type bmp)
+<Results/InputFiles.png>
+
+Overfull \hbox (9.53546pt too wide) in paragraph at lines 96--97
+ [][] 
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.2645pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.2645pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
+
+[19]) (ReportParts/Conclusions.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.2645pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.2645pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
+
+[20]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.2645pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.2645pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
+
+[21]) (References.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.2645pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.2645pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
+
+[22]
 Underfull \hbox (badness 6927) in paragraph at lines 14--15
 []\TU/TimesNewRoman(0)/m/n/13 chahelgupta. (n.d.). \TU/TimesNewRoman(0)/m/it/13
  DSA-Project-FamilyTree: C++ program for building
@@ -2040,50 +2200,37 @@ sNewRoman(0)/m/n/13 . GitHub. [][]$[][][][][] [] [] [] [][][][][][] [] [][][] [
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 20--21
-[]\TU/TimesNewRoman(0)/m/n/13 Stack Overflow contributors. (2012). \TU/TimesNew
-Roman(0)/m/it/13 Data structure for family tree\TU/TimesNewRoman(0)/m/n/13 . St
-ack
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-\TU/TimesNewRoman(0)/m/n/13 Overflow. [][]$[][][][][] [] [] [] [][][][][][][][]
-[][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][] []
- []
-
-
-Underfull \hbox (badness 3386) in paragraph at lines 23--24
+Underfull \hbox (badness 3386) in paragraph at lines 20--21
 []\TU/TimesNewRoman(0)/m/n/13 tenouk. (n.d.). \TU/TimesNewRoman(0)/m/it/13 Cons
 tructing a very simple family structure tree using the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 \TU/TimesNewRoman(0)/m/it/13 C++ inheritance principles\TU/TimesNewRoman(0)/m/n
 /13 . tenouk.com. [][]$[][][][][] [] [] [] [][][] [] [][][][][][] [] [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 []\TU/TimesNewRoman(0)/m/n/13 Trường Đại học Quy Nhơn. (2025). \TU/TimesNewRoma
 n(0)/m/it/13 Mẫu code C++ cho cây
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 \TU/TimesNewRoman(0)/m/it/13 nhị phân và cây gia phả\TU/TimesNewRoman(0)/m/n/13
  . Studocu. [][]$[][][][][] [] [] [] [][][] [] [][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 [][] [] [][] [] [][][][][][][][] [] [][][][][][][][][][][][][][][][][][][] [] [
 ][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 32--33
+Underfull \hbox (badness 1708) in paragraph at lines 29--30
 []\TU/TimesNewRoman(0)/m/n/13 Wikipedia contributors. (2025). \TU/TimesNewRoman
 (0)/m/it/13 Kinship\TU/TimesNewRoman(0)/m/n/13 . Wikipedia, The Free Encycloped
 ia.
@@ -2098,21 +2245,397 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.2645pt}.
 
-[20] (main.aux)
+[23] (Phuluc/Code1.tex
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 5.
+ (PBL1FullCode/DataStructure.h
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[24]) (PBL1FullCode/TreeManager.h
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[25]) (PBL1FullCode/SearchEngine.h) (PBL1FullCode/Relationship.h
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[26]) (PBL1FullCode/FileHandler.h) (PBL1FullCode/TreeManager.cpp
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[27]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[28]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[29]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[30]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[31]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[32]) (PBL1FullCode/SearchEngine.cpp
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[33]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[34]) (PBL1FullCode/Relationship.cpp
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[35]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[36]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[37]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[38]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[39]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[40]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[41]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[42]) (PBL1FullCode/FileHandler.cpp
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[43]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[44]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[45]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[46]) (PBL1FullCode/main.cpp
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[47]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[48]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[49]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[50]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[51]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[52]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[53]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[54]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[55]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[56]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[57]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[58]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[59]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[60]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[61])) (tikz/FuncMap.tex
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
+(Font)              scaled to size 12.00128pt on input line 70.
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
+(Font)              scaled to size 8.00085pt on input line 70.
+LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 70.
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
+(Font)              scaled to size 11.99872pt on input line 70.
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
+(Font)              scaled to size 7.99915pt on input line 70.
+LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 70.
+)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[62]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.01338pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.01338pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.01338pt}.
+
+[63] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 53F86DCF0E2C56624E265F65B3B5F4EF;6157.
+(rerunfilecheck)             Checksum: 52FC71A962F665D7C66FAF4CD15644FA;8112.
  ) 
 Here is how much of TeX's memory you used:
- 37588 strings out of 403250
- 747710 string characters out of 5460267
- 1623974 words of memory out of 5000000
- 65378 multiletter control sequences out of 15000+600000
- 634569 words of font info for 162 fonts, out of 8000000 for 9000
+ 38668 strings out of 403250
+ 765510 string characters out of 5460267
+ 1983678 words of memory out of 5000000
+ 66388 multiletter control sequences out of 15000+600000
+ 636354 words of font info for 176 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 108i,14n,128p,1195b,1489s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,14n,107p,1195b,1959s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (24 pages).
+Output written on main.pdf (68 pages).

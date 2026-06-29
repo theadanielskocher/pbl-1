@@ -10,5 +10,6 @@ string trim(const string& str);
 void FlattenTree(Person* current, vector<PersonRecord>& listRecords);
 void SaveTreeToFile(string filename);
 void ImportFromTextFile(string filename);
+void LoadTreeFromFile(string filename);
 
 #endif

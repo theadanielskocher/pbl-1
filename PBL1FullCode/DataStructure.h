@@ -13,12 +13,10 @@
 #define ORANGE  "\033[38;5;208m"
 #define CYAN    "\033[36m"
 #define HIGHLIGHT "\033[1;37;44m"
+#define YELLOW   "\033[38;5;226m"
 
 using namespace std;
 
-// ======================================================================
-// 1. CẤU TRÚC DỮ LIỆU ĐỐI TƯỢNG (Dùng trên RAM)
-// ======================================================================
 struct Person {
     int id; 
     string name;
@@ -27,35 +25,35 @@ struct Person {
     string job;             
     string deathDay;        
     string spouseName;      
-    int numChildren;        
+    int numChildren;
+	int birthYear;      
 
-    Person* parent;
-    Person* firstChild;
-    Person* nextSibling;
+    Person* parent = nullptr;
+    Person* firstChild = nullptr;
+    Person* nextSibling = nullptr;
 
-    Person(string _name, string _gender, Person* _parent = nullptr);
+    Person(string _name, string _gender, int _birthYear, string _birthday, Person* _parent = nullptr);
+    
+    static int extractYear(string bday) {
+        if (bday.length() < 4) return 0;
+        try {
+            return stoi(bday.substr(bday.length() - 4));
+        } catch (...) { return 0; }
+    }
 };
 
 struct SearchResult {
-    Person* node;    // Con trỏ tới nút tìm thấy (hoặc nút chồng nếu là vợ)
-    bool isSpouse;   // true nếu tên khớp với spouseName, false nếu khớp với name
+    Person* node;
+    bool isSpouse;
 };
 
-
-// ======================================================================
-// 2. CẤU TRÚC BẢN GHI TĨNH (Dùng để lưu/đọc file nhị phân .dat)
-// ======================================================================
 struct PersonRecord {
     int id;
     int parentId;
     char name[50], gender[10], birthday[20], job[50], deathDay[20], spouseName[50];
-    int numChildren;
+    int numChildren, birthYear;
 };
 
-// ======================================================================
-// 3. KHAI BÁO BIẾN TOÀN CỤC (Dùng từ khóa extern)
-// ======================================================================
-// extern báo cho compiler rằng các biến này được định nghĩa ở file .cpp khác
 extern Person* root; 
 extern int global_id_counter;
 

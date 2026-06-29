@@ -5,7 +5,7 @@ Hệ thống được thiết kế và xây dựng dựa trên mô hình Lập t
 Cách tiếp cận này đảm bảo hệ thống đạt được độ gắn kết cao bên trong từng mô-đun và độ phụ thuộc thấp giữa các mô-đun với nhau, tạo tiền đề thuận lợi cho việc kiểm thử, gỡ lỗi và mở rộng tính năng trong tương lai.
 \subsubsection{Cấu trúc tệp tin và phân rã chức năng}
 
-Mã nguồn của đồ án được tổ chức thành 6 thành phần cốt lõi, bao gồm 1 tệp tiêu đề cơ sở, 4 cặp module logic (\texttt{.h} và \texttt{.cpp}) và một tệp điều khiển trung tâm. Chi tiết chức năng của từng tệp được quy định như sau:
+Mã nguồn của đồ án được tổ chức thành 6 thành phần cốt lõi, bao gồm 1 tệp tiêu đề cơ sở, 4 cặp mô-đun logic (\texttt{.h} và \texttt{.cpp}) và một tệp điều khiển trung tâm. Chi tiết chức năng của từng tệp được quy định như sau:
 \begin{enumerate}[label*=(\alph*)]
 	\item \texttt{DataStructures.h}: Định nghĩa cấu trúc nút LCRS, bản ghi và biến toàn cục, đảm bảo nhất quán kiểu dữ liệu giữa các mô-đun.
 	\item \texttt{TreeManager.h/.cpp}: Thao tác trực tiếp trên RAM; khởi tạo biến toàn cục; quản lý vòng đời nút (cấp phát, giải phóng, truy xuất).
@@ -17,8 +17,9 @@ Mã nguồn của đồ án được tổ chức thành 6 thành phần cốt l�
 
 \input{tikz/ProArch}
 
-\input{tikz/FuncMap}
-Toàn bộ mã nguồn của chương trình quản lý gia phả có tại Phụ lục đính kèm theo báo cáo này.
+Toàn bộ mã nguồn của chương trình quản lý gia phả có tại Phụ lục A đính kèm theo báo cáo này.
+
+Sơ đồ cấu trúc các hàm chính của chương trình có tạo Phụ lục B đính kèm theo báo cáo này.
 
 \subsection{Ngôn ngữ cài đặt}
 
@@ -38,3 +39,64 @@ Dự án lựa chọn ngôn ngữ C++ làm ngôn ngữ lập trình chính để
 \end{itemize}
 
 \subsection{Kết quả}
+
+\subsubsection{Giao diện chính của chương trình}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Results/Main.png}
+	\caption{Giao diện chính của chương trình}
+\end{figure}
+\subsubsection{Kết quả thực thi chương trình}
+\begin{figure}[H]
+	\centering
+	% --- HÀNG 1 ---
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Results/ShowFamily.png}
+		\caption{Hiển thị cây gia phả}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Results/Search.png}
+		\caption{Tìm kiếm người trong gia phả}
+	\end{subfigure}
+	
+	\caption{Tổng hợp các màn hình thực thi các chức năng chính của hệ thống quản lý gia phả}
+\end{figure}
+
+\begin{figure}[H]\ContinuedFloat
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Results/Relationship1.png}
+		\caption{Kiểm tra quan hệ họ hàng giữa hai người}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Results/Relationship2.png}
+		\caption{Tìm người theo quan hệ}
+	\end{subfigure}
+	
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Results/Update}
+		\caption{Cập nhật thông tin cho cá nhân}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Results/Statistics}
+		\caption{Thống kê gia phả}
+	\end{subfigure}
+	
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Results/InputFiles}
+		\caption{Nhập gia phả từ file .txt}
+	\end{subfigure}
+	\caption{Tổng hợp các màn hình thực thi các chức năng chính của hệ thống quản lý gia phả \textit{(tiếp theo)}}
+	\label{fig:layout-demo}
+\end{figure}
+

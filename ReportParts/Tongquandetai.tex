@@ -1,3 +1,35 @@
-Đề tài tập trung xây dựng một chương trình quản lý gia phả bằng ngôn ngữ C/C++, trong đó thông tin các thành viên và mối quan hệ huyết thống được mô hình hoá dưới dạng cấu trúc cây. Chương trình cho phép tạo lập, cập nhật, tra cứu và lưu trữ dữ liệu gia phả một cách có hệ thống.
+\subsection{Mục đích thực hiện đề tài}
 
-Thông qua đề tài, sinh viên được rèn luyện kỹ năng phân tích bài toán thực tế, lựa chọn cấu trúc dữ liệu phù hợp và hiện thực hoá các chức năng cơ bản như thêm thành viên, duyệt cây và truy vấn quan hệ. Đề tài mang tính thực hành cao, phù hợp với mục tiêu của học phần PBL 1 và trình độ của sinh viên thực hiện.
+Trong văn hóa Á Đông, việc lưu giữ gia phả là một truyền thống quý báu để duy trì mối liên hệ huyết thống giữa các thế hệ. Tuy nhiên, các phương pháp lưu trữ truyền thống trên giấy tờ đang bộc lộ nhiều hạn chế về khả năng tìm kiếm, cập nhật và tính toán các mối quan hệ phức tạp. Mục đích của đề tài là xây dựng một hệ thống phần mềm chuyên dụng nhằm số hóa gia phả, ứng dụng các cấu trúc dữ liệu tối ưu để quản lý thông tin dòng họ một cách khoa học và bền vững.
+
+\subsection{Mục tiêu đề tài}
+Đề tài tập trung vào việc hiện thực hóa các mục tiêu kỹ thuật và ứng dụng sau:
+\begin{itemize}
+	\item Xây dựng cấu trúc lưu trữ: Thiết kế và triển khai cây gia phả dựa trên cấu trúc cây Left-Child Right-Sibling (LCRS) để tối ưu hóa việc quản lý số lượng nút con không xác định.
+	\item Phát triển thuật toán truy vấn: Ứng dụng thuật toán Lowest Common Ancestor (LCA) để tự động xác định chính xác các quan hệ họ hàng dựa trên khoảng cách thế hệ.
+	\item Đảm bảo tính bền vững của dữ liệu: Triển khai cơ chế lưu trữ và phục hồi dữ liệu thông qua tệp nhị phân (.dat/.bin) để tăng tốc độ truy xuất và bảo mật thông tin.
+	\item Tối ưu hóa giao diện người dùng: Cung cấp giao diện console trực quan hỗ trợ điều hướng bằng phím mũi tên và chức năng tìm kiếm, lọc kết quả thông minh.
+\end{itemize}
+
+\subsection{Phạm vi và đối tượng nghiên cứu}
+\begin{itemize}
+	\item Đối tượng nghiên cứu: Các cấu trúc dữ liệu dạng cây, thuật toán duyệt cây, thuật toán tìm tổ tiên chung gần nhất (LCA) và kỹ thuật xử lý tệp nhị phân trong C++.
+	\item Phạm vi nghiên cứu: Hệ thống tập trung quản lý thông tin cá nhân và quan hệ huyết thống theo dòng cha (paternal lineage). Dữ liệu được giới hạn trong phạm vi một dòng họ với các thông tin cơ bản như: họ tên, giới tính, ngày sinh, nghề nghiệp và mối quan hệ trực hệ/bàng hệ.
+\end{itemize}
+
+\subsection{Phương pháp nghiên cứu}
+\begin{itemize}
+	\item Nghiên cứu lý thuyết: Phân tích các tài liệu về cấu trúc dữ liệu và giải thuật, đặc biệt là các biến thể của cây tổng quát và cách chuyển đổi sang cây nhị phân.
+	\item Phương pháp thực nghiệm: Xây dựng phần mềm mẫu (prototype) bằng ngôn ngữ C++, thực hiện các kiểm thử (unit test) trên bộ dữ liệu gia phả thực tế để đánh giá tính chính xác của thuật toán LCA và hiệu năng lưu trữ file.
+	\item Quy trình phát triển: Áp dụng mô hình phát triển phần mềm theo dự án (PBL), từ bước phân tích yêu cầu, thiết kế kiến trúc đa file đến triển khai và tối ưu hóa.
+\end{itemize}
+
+\subsection{Cấu trúc đồ án}
+Nội dung của đồ án chia làm 5 chương:
+\begin{itemize}
+	\item Chương 1 - Giới thiệu chung: Trình bày lý do chọn đề tài, mục tiêu và phạm vi nghiên cứu.
+	\item Chương 2 - Cơ sở lý thuyết: Phân tích cấu trúc cây LCRS, thuật toán LCA và các kỹ thuật xử lý tệp trong C++.
+	\item Chương 3 - Tổ chức cấu trúc dữ liệu và thuật toán: Cách thức tổ chức dữ liệu bài toán và hướng triển khai các thuật toán cốt lõi của chương trình.
+	\item Chương 4 - Chương trình và kết quả: Mô tả kiến trúc tổng thể, cấu trúc tệp tin, hiển thị giao diện chương trình, kết quả chạy thực tế.
+	\item Chương 5 - Kết luận và hướng phát triển: Kết luận về đề tài và hướng thực hiện trong tương lai.
+\end{itemize}

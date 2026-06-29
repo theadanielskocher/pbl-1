@@ -3,10 +3,13 @@
 \contentsline {figure}{\numberline {3}{\ignorespaces Đoạn mã C++ thể hiện logic duyệt cây theo chiều sâu và giải phóng bộ nhớ.}}{6}{figure.caption.4}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Sơ đồ ERD mô tả thực thể Person và các mối quan hệ tự thân trong cấu trúc cây LCRS}}{7}{figure.caption.5}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Mô phỏng quy trình thực hiện truy vấn theo Định danh bằng cấu trúc Bảng băm}}{9}{figure.caption.6}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Mã giả và hình vẽ minh hoạ cho pha 1 của thuật toán.}}{10}{figure.caption.7}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Mã giả và hình vẽ minh hoạ cho pha 2 của thuật toán}}{10}{figure.caption.8}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Mã giả mô tả pha thứ nhất của thuật toán truy vấn theo danh xưng}}{12}{figure.caption.9}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Mã giả mô tả pha thứ hai của thuật toán truy vấn theo danh xưng}}{13}{figure.caption.10}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Mã giả mô tả thuật toán phẳng hoá cây để lưu file}}{14}{figure.caption.11}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Sơ đồ mô tả cấu trúc chương trình và các tệp tin}}{16}{figure.caption.12}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Sơ đồ cấu trúc các hàm chính của chương trình}}{17}{figure.caption.13}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Mã giả quy trình thực hiện truy vấn theo Định danh bằng cấu trúc Bảng băm}}{9}{figure.caption.7}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Mã giả và hình vẽ minh hoạ cho pha 1 của thuật toán.}}{10}{figure.caption.8}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Mã giả và hình vẽ minh hoạ cho pha 2 của thuật toán}}{11}{figure.caption.9}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Mã giả mô tả pha thứ nhất của thuật toán truy vấn theo danh xưng}}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Mã giả mô tả pha thứ hai của thuật toán truy vấn theo danh xưng}}{13}{figure.caption.11}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Mã giả mô tả thuật toán phẳng hoá cây để lưu file}}{15}{figure.caption.12}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Sơ đồ mô tả cấu trúc chương trình và các tệp tin}}{18}{figure.caption.13}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Giao diện chính của chương trình}}{19}{figure.caption.14}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Tổng hợp các màn hình thực thi các chức năng chính của hệ thống quản lý gia phả}}{19}{figure.caption.15}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Tổng hợp các màn hình thực thi các chức năng chính của hệ thống quản lý gia phả \textit {(tiếp theo)}}}{20}{figure.caption.16}%

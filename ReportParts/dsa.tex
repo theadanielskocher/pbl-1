@@ -11,11 +11,10 @@ Trong việc quản lý gia phả của một dòng họ, thách thức lớn nh
 
 Để giải quyết bài toán quản lý thông tin đa dạng của mỗi cá nhân trong dòng họ, chương trình thiết kế một kiểu dữ liệu tự định nghĩa (\texttt{struct person}). Sơ đồ cấu trúc được mô tả ở Hình \ref{fig:ERD1}. Cấu trúc này ánh xạ trực tiếp các yêu cầu của thực tế vào không gian bộ nhớ:
 \begin{itemize}
-	\item Nhóm thuộc tính định danh và nhân khẩu học: Các trường dữ liệu \texttt{name}, \texttt{gender}, \texttt{birthday}, \texttt{job} được sử dụng để lưu trữ hồ sơ cơ bản. Trong đó, \texttt{gender} (Nam/Nữ) đóng vai trò là cờ điều hướng (flag) để quyết định cấu trúc phát triển của cây.
-	\item Nhóm thuộc tính gia đình và tình trạng: Trường \texttt{spouseName} (Tên vợ/chồng) được gắn trực tiếp như một thuộc tính của Nút thay vì tạo một Nút độc lập, giúp giảm độ phức tạp của đồ thị cây. Trường deathDay quản lý tình trạng sinh tử, và \texttt{numChildren} (số con) được thiết kế đặc biệt chỉ kích hoạt lưu trữ đối với thành viên Nữ.
+	\item Nhóm thuộc tính định danh và nhân khẩu học: Các trường dữ liệu \texttt{name}, \texttt{gender}, \texttt{birthday}, \texttt{job} được sử dụng để lưu trữ hồ sơ cơ bản. Trong đó, \texttt{gender} (Nam/Nữ) đóng vai trò là cờ điều hướng (flag) để quyết định cấu trúc phát triển của cây; trường \texttt{birthday} đóng vai trò định hình thứ tự anh - em trong những người con của cùng một cha.
+	\item Nhóm thuộc tính gia đình và tình trạng: Trường \texttt{spouseName} (Tên vợ/chồng) được gắn trực tiếp như một thuộc tính của Nút thay vì tạo một Nút độc lập, giúp giảm độ phức tạp của đồ thị cây. Ngoài ra, kỹ thuật này đảm bảo cấu trúc gia phả luôn là một cây đơn gốc, giúp duy trì tính toàn vẹn cho các thuật toán đệ quy và tìm tổ tiên chung (LCA) mà không làm tăng độ phức tạp của đồ thị thành dạng chu trình. Trường deathDay quản lý tình trạng sinh tử, và \texttt{numChildren} (số con) được thiết kế đặc biệt chỉ kích hoạt lưu trữ đối với thành viên Nữ. 
 	\item Nhóm thuộc tính định tuyến (Routing Attributes): Các con trỏ \texttt{pParent}, \texttt{pFir-stChild}, \texttt{pNextSibling} đóng vai trò là ``chỉ dẫn đường" để móc nối thực thể này vào mạng lưới gia phả chung, đảm bảo tính liên kết động mà không cần mảng trung gian.
 \end{itemize}
-
 \input{tikz/tik2}
 
 \subsubsection{Cài đặt các ràng buộc cần thiết}
@@ -25,7 +24,7 @@ Cấu trúc dữ liệu đã được tùy biến để tuân thủ nghiêm ng�
 	\item Trong một dòng họ, việc trùng họ tên giữa các thế hệ là khá phổ biến (ví dụ: nhiều người cùng tên ``Nguyễn Văn A"). Việc tìm kiếm và cập nhật của chương trình nếu chỉ dựa vào chuỗi name sẽ dẫn đến sai lệch nghiêm trọng. Để giải quyết, nhóm cơ chế Lọc danh sách lựa chọn (Selection List). Thay vì định danh bằng chuỗi ký tự không duy nhất, chương trình sử dụng địa chỉ bộ nhớ làm định danh tuyệt đối, kết hợp với việc truy vấn thuộc tính phụ từ người dùng để xác nhận đối tượng.
 \end{enumerate}
 
-\subsection{Thuật toán}
+\subsection{Thuật toán và đánh giá thuật toán}
 \subsubsection{Thuật toán Duyệt và Tìm kiếm}
 
 Vì các nút bộ nhớ (\texttt{Person}) được cấp phát động trên RAM, chương trình thiết kế hai chiến lược truy vấn chuyên biệt dựa trên loại khóa tìm kiếm để tối ưu hóa hiệu năng hệ thống:
@@ -36,8 +35,11 @@ Vì các nút bộ nhớ (\texttt{Person}) được cấp phát động trên RA
 		\item \textit{Phương pháp thực hiện:} Kỹ thuật này được kích hoạt trong tiến trình đọc tệp nhị phân \texttt{.dat}. Chương trình khởi tạo \texttt{std::unordered\_map<int, Person*>} để lưu trữ danh sách các nút vừa cấp phát. Khi cần khôi phục tập hợp cạnh $E$ (nối con trỏ cha-con), hệ thống chỉ cần truyền \texttt{parentId} vào Bảng băm để nhận lại con trỏ thực thi ngay lập tức. Hình \ref{fig:Hash1} mô tả dễ hiểu quá trình này.
 		\item \textit{Phân tích độ phức tạp:} Thuật toán đưa độ phức tạp thời gian tìm kiếm cha từ $O(|V|)$ xuống $O(1)$ tuyệt đối, giải quyết triệt để nút thắt cổ chai khi hệ thống phải tái thiết lập hàng vạn liên kết con trỏ.
 	\end{itemize}
+
+\vspace{0.5cm}
 	
 \input{tikz/HashTable1}
+\input{codebaocao/Hash1}
 	
 \textbf{Truy vấn theo Tên gọi}
 	\begin{itemize}
@@ -51,9 +53,9 @@ Vì các nút bộ nhớ (\texttt{Person}) được cấp phát động trên RA
 
 Bài toán Xác định quan hệ và danh xưng trong gia phả thực chất là một bài toán kinh điển của cấu trúc dữ liệu cây. Dưới góc độ cơ sở toán học trong khoa học máy tính, đây chính là sự kết hợp giữa thuật toán Tìm tổ tiên chung gần nhất (\textbf{L}owest \textbf{C}ommon \textbf{A}ncestor - viết tắt là LCA) và việc phân tích Ma trận độ lệch khoảng cách.
 
-Để đảm bảo thuật toán chạy chính xác, cũng như bao quát được sự phức tạp của hệ thống danh xưng trong tiếng Việt, thuật toán sẽ trải qua bốn pha (phase) như sau:
+Để đảm bảo thuật toán chạy chính xác, cũng như bao quát được sự phức tạp của hệ thống danh xưng trong tiếng Việt, thuật toán sẽ trải qua bốn pha như sau:
 
-\textbf{\textit{Pha thứ nhất: Truy vết đường đi về gốc (Path tracing).}}
+\textbf{\textit{Pha thứ nhất: Truy vết đường đi về gốc.}}
 \begin{itemize}
     \item Mục tiêu của pha: Tìm chuỗi các đỉnh kết nối từ người đang xét lên tới Cụ Tổ, làm cơ sở cho việc xác định LCA ở pha thứ hai.
     \item Phương pháp thực hiện: Giả sử đồ thị cây gia phả là $T = (V, E)$, ta cần xây dựng hai tập hợp đường đi cho nút $A$ và nút $B$. Quy trình thực hiện như sau:
@@ -91,35 +93,49 @@ Bài toán Xác định quan hệ và danh xưng trong gia phả thực chất l
 \begin{itemize}
 	\item Mục tiêu của pha: Chuyển đổi các giá trị toán học $(d_A, d_B)$ thành tên gọi quan hệ họ hàng theo quy chuẩn văn hóa.
 	\item Phương pháp thực hiện: Sử dụng cấu trúc điều kiện để ánh xạ cặp $(d_A, d_B)$ vào ma trận danh xưng, cụ thể:
+	
 	\begin{center}
 		\small
 		\setlength{\tabcolsep}{4pt}
-			\begin{longtable}{
-					|>{\centering\arraybackslash}m{2cm}|
-					>{\centering\arraybackslash}m{3.5cm}|
-					>{\centering\arraybackslash}m{3.5cm}|
-					>{\arraybackslash}m{6cm}|
-				}
-				\hline
-				\textbf{Tọa độ} $(dA,dB)$ & \textbf{Quan hệ của B đối với A} & \textbf{Quan hệ của A đối với B} & \textbf{Giải thích Logic} \\ \hline
-				\endfirsthead
-				
-				\hline
-				\textbf{Tọa độ} $(dA,dB)$ & \textbf{Quan hệ của B đối với A} & \textbf{Quan hệ của A đối với B} & \textbf{Giải thích Logic} \\ \hline
-				\endhead
-				
-				\hline \multicolumn{4}{r}{{}} \\
-				\endfoot
-				\endlastfoot
-				
-				$(k,0)$ & Tổ tiên đời thứ k & Hậu duệ đời thứ k & B≡L, B là gốc của nhánh chứa A. \\ \hline
-				$(0,k)$ & Hậu duệ đời thứ k & Tổ tiên đời thứ k & A≡L, A là gốc của nhánh chứa B. \\ \hline
-				$(k,k)$ & Anh/Chị/Em họ đời k−1 & Anh/Chị/Em họ đời k−1 & Chung tổ tiên cách đây k thế hệ. \\ \hline
-				$(1,2)$ & Bác/Cô/Chú/Dì & Cháu (gọi bằng Bác/Chú...) & B là con của anh/chị/em với A. \\ \hline
-				$(2,1)$ & Cháu (gọi bằng Bác/Chú...) & Bác/Cô/Chú/Dì & A là con của anh/chị/em với B. \\ \hline
-				$(1,k)$ với $k>2$ & Cụ/Kỵ (nhánh bàng hệ) & Chắt/Chút (nhánh bàng hệ) & B là hậu duệ xa của anh/chị/em với A. \\ \hline
-				$(dA,dB)$ & Họ hàng tổng quát & Họ hàng tổng quát & Cách nhau tổng $dA+dB$ bậc thế hệ. \\ \hline
-			\end{longtable}
+		\renewcommand{\arraystretch}{1.2}
+		\begin{longtable}{
+				|>{\centering\arraybackslash}m{2.2cm}|
+				>{\centering\arraybackslash}m{3.2cm}|
+				>{\centering\arraybackslash}m{3.2cm}|
+				>{\arraybackslash}m{6.2cm}|
+			}
+			\hline
+			\textbf{Tọa độ} $(dA,dB)$ & 
+			\textbf{Quan hệ của B đối với A} & 
+			\textbf{Quan hệ của A đối với B} & 
+			\textbf{Giải thích Logic} \\ 
+			\hline
+			\endfirsthead
+			
+			\hline
+			\textbf{Tọa độ} $(dA,dB)$ & 
+			\textbf{Quan hệ của B đối với A} & 
+			\textbf{Quan hệ của A đối với B} & 
+			\textbf{Giải thích Logic} \\ 
+			\hline
+			\endhead
+			
+			\hline
+			\multicolumn{4}{r}{\textit{Còn tiếp}} \\
+			\endfoot
+			
+			\hline
+			\endlastfoot
+			
+			$(k,0)$      & Tổ tiên đời thứ $k$                & Hậu duệ đời thứ $k$                & $B \equiv L$, $B$ là gốc của nhánh chứa $A$. \\ \hline
+			$(0,k)$      & Hậu duệ đời thứ $k$                & Tổ tiên đời thứ $k$                & $A \equiv L$, $A$ là gốc của nhánh chứa $B$. \\ \hline
+			$(k,k)$      & Anh/Chị/Em họ đời $k-1$           & Anh/Chị/Em họ đời $k-1$           & Chung tổ tiên cách đây $k$ thế hệ. \\ \hline
+			$(1,2)$      & Bác/Cô/Chú/Dì                      & Cháu (gọi bằng Bác/Chú...)         & $B$ là con của anh/chị/em với $A$. \\ \hline
+			$(2,1)$      & Cháu (gọi bằng Bác/Chú...)         & Bác/Cô/Chú/Dì                      & $A$ là con của anh/chị/em với $B$. \\ \hline
+			$(1,k)$ với $k>2$ & Cụ/Kỵ (nhánh bàng hệ)          & Chắt/Chút (nhánh bàng hệ)          & $B$ là hậu duệ xa của anh/chị/em với $A$. \\ \hline
+			$(dA,dB)$    & Họ hàng tổng quát                  & Họ hàng tổng quát                  & Cách nhau tổng $dA+dB$ bậc thế hệ. \\ \hline
+			
+		\end{longtable}
 	\end{center}
 \end{itemize}
 
@@ -144,9 +160,7 @@ Một bài toán khác được đặt ra ngược với bài toán được xá
 	\item Phương pháp thực hiện: Từ tổ tiên $L$, ta cần tìm các hậu duệ ở mức thế hệ $d_B$ thỏa mãn các điều kiện về giới tính và thứ tự. Ta sẽ sử dụng phương pháp duyệt theo chiều rộng (BFS) để tìm tất cả các nút cách $L$ đúng $d_B$ bậc.
 	\item Về độ phức tạp: Độ phức tạp thời gian là $O(S)$, với $S$ là số lượng anh/em/con/cháu trong nhánh đang xét đó.
 \end{itemize}
-
-Mã giả mô tả thuật toán của pha ở hình \ref{fig:Rel1}.
-
+%Mã giả mô tả thuật toán của pha ở hình \ref{fig:Rel1}.
 \input{codebaocao/LCA22}
 \textbf{\textit{Pha thứ ba: Phân giải danh xưng cụ thể.}}
 \begin{itemize}
@@ -163,7 +177,7 @@ Tổng quát, thuật toán chung của ta vẫn tiệm cận mức $O(H)$, rõ 
 Ngoài ra, vì cấu trúc LCRS truyền thống chỉ lưu trữ các thực thể có quan hệ huyết thống trực tiếp, khiến các thành viên nữ (vợ) trở thành ``điểm mù'' (nghĩa là, không thể thực hiện bất kỳ chức năng nào của hệ thống trên những người này) của giải thuật duyệt cây. Vì vậy, giải pháp cho điều này là sử dụng cơ chế Proxy Node (Nút đại diện). Khi truy vấn ``Mẹ'', hệ thống thực hiện tìm kiếm gián tiếp: \texttt{Mother(A) = Spouse(Parent(A))}, cụ thể:
 \begin{itemize}
 	\item Hệ thống xác định nút Cha của A (là nút $P$ trong cây).
-	\item Sau đó, hệ thống truy xuất vào thuộc tính spouseName (vợ) của nút $P$.
+	\item Sau đó, hệ thống truy xuất vào thuộc tính \texttt{spouseName} (vợ) của nút $P$.
 \end{itemize}
 
 Cách làm này giữ cho cây luôn là cây đơn gốc (single-root tree), giúp các thuật toán duyệt đệ quy và LCA luôn đạt độ phức tạp tối ưu nhất.
@@ -198,3 +212,23 @@ Quá trình phục hồi dữ liệu từ tệp nhị phân được tối ưu h
 \textbf{\textit{Đánh giá thuật toán}}
 
 Cả hai tiến trình Serialization và Deserialization đều đạt độ phức tạp thời gian $O(N)$ và không gian $O(N)$, với $N$ là tổng số thành viên trong gia phả. Việc kết hợp Block I/O và Hash Map giúp giải thuật xử lý mượt mà dữ liệu quy mô hàng vạn thực thể mà không gây ra tình trạng tràn ngăn xếp (Stack Overflow) hay nghẽn cổ chai truy xuất đĩa.
+
+\subsubsection{Thuật toán thống kê dòng họ}
+
+Thuật toán thống kê cung cấp cái nhìn tổng quan về quy mô và cấu trúc của dòng họ thông qua các chỉ số định lượng, nhằm giúp người quản trị nắm bắt được tổng số thành viên (bao gồm cả huyệt thống và phu nhân), sự phân bổ giới tính, độ dài thế hệ (số đời), và tình trạng sinh tồn của các cá nhân trong gia phả.
+
+Do gia phả được lưu trữ dưới dạng cây LCRS, việc thống kê được thực hiện tối ưu nhất bằng phương pháp Duyệt cây theo chiều sâu (DFS) kết hợp với kỹ thuật đệ quy. Mỗi khi đi qua một nút ($Node$), hệ thống sẽ thực hiện kiểm tra các thuộc tính của thực thể Person và cập nhật vào cấu trúc dữ liệu \texttt{FamilyStats}.
+
+Các bước cụ thể như sau:
+\begin{itemize}
+	\item Bước 1: Tạo một cấu trúc lưu trữ \texttt{FamilyStats} với các biến đếm (tổng số, nam, nữ, phu nhân, tử vong) và một mảng \texttt{genDistribution} để lưu số lượng thành viên của từng đời.
+	\item Bước 2: Đệ quy xử lý nút hiện tại. Tăng biến \texttt{totalMembers}; Kiểm tra gender: Nếu là ``Nam'' tăng \texttt{maleCount}, nếu ``Nu'' tăng \texttt{femaleCount}; kiểm tra \texttt{spouseName}: Nếu khác ``None'' hoặc ``N/A'', tăng \texttt{totalSpouses} (thống kê dâu/rể); Kiểm tra \texttt{deathDay}: Nếu khác ``N/A'', tăng \texttt{deceasedCount}; Cập nhật thế hệ: Sử dụng tham số \texttt{level} để tăng giá trị tại \texttt{genDistribution[level]} và cập nhật \texttt{maxGen = max(maxGen, level)}.
+	\item Bước 3: Lan toả đệ quy. Gọi đệ quy xuống con đầu tiên và gọi đệ quy sang anh em kế cận.
+\end{itemize}
+
+\textbf{\textit{Phân tích độ phức tạp}}
+
+\begin{itemize}
+	\item Độ phức tạp thời gian: $O(N)$, với $N$ là tổng số nút trong cây gia phả. Thuật toán chỉ đi qua mỗi nút đúng một lần duy nhất.
+	\item Độ phức tạp không gian: $O(H)$, với $H$ là chiều cao của cây (tương ứng với số đời), do sử dụng ngăn xếp đệ quy trong quá trình duyệt.
+\end{itemize}
